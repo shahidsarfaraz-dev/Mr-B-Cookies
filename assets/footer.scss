@@ -1,0 +1,79 @@
+.footer {
+    background-color: #3A332D;
+    .footer-top {
+        padding: 40px 0;
+        .social {
+            gap: clamp(20px, 2vw, 26px);
+            li {
+                a {
+                    width: 52px;
+                    height: 52px;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &:hover {
+                        background-color: white;
+                        img {
+                            filter: invert(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-middle {
+        padding: 34px 0;
+        border-top: 1px solid rgba(white, .2);
+        border-bottom: 1px solid rgba(white, .2);
+        .menu {
+            li {
+                padding: 0 35px;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: white;
+                    top: 50%;
+                    left: 100%;
+                    transform: translate(-50%, -50%);
+                }
+                &:last-child {
+                    &::before {
+                        display: none;
+                    }
+                }
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        padding: 40px 0;
+    }
+}
+@media (max-width: 992px) {
+    .footer {
+        .footer-top {
+            .social {
+                li {
+                    a {
+                        width: 40px;
+                        height: 40px;
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            object-fit: contain;
+                            object-position: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

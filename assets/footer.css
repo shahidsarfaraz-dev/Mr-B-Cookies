@@ -1,0 +1,68 @@
+.footer {
+  background-color: #3A332D;
+}
+.footer .footer-top {
+  padding: 40px 0;
+}
+.footer .footer-top .social {
+  gap: clamp(20px, 2vw, 26px);
+}
+.footer .footer-top .social li a {
+  width: 52px;
+  height: 52px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-top .social li a:hover {
+  background-color: white;
+}
+.footer .footer-top .social li a:hover img {
+  filter: invert(1);
+}
+.footer .footer-middle {
+  padding: 34px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer .footer-middle .menu li {
+  padding: 0 35px;
+  position: relative;
+}
+.footer .footer-middle .menu li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+.footer .footer-middle .menu li:last-child::before {
+  display: none;
+}
+.footer .footer-middle .menu li a {
+  color: white;
+}
+.footer .footer-bottom {
+  padding: 40px 0;
+}
+
+@media (max-width: 992px) {
+  .footer .footer-top .social li a {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .footer-top .social li a img {
+    width: 20px;
+    height: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+}/*# sourceMappingURL=footer.css.map */

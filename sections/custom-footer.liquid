@@ -1,0 +1,101 @@
+{{ 'footer.css' | asset_url | stylesheet_tag }}
+<footer class="footer">
+  <div class="container">
+    <!-- TOP: Logo + Social -->
+    <div class="footer-top d-flex align-items-center flex-wrap gap-3 justify-content-center justify-content-lg-between flex-column flex-lg-row">
+      {%- if settings.logo != blank -%}
+        <a href="{{ routes.root_url }}" class="d-block">
+          <img
+            src="{{ settings.logo | image_url: width: settings.logo_width }}"
+            alt="{{ shop.name }}"
+            width="{{ settings.logo_width }}"
+            height=" {{ settings.logo.height }}"
+            class="footer-logo"
+            loading="lazy"
+          >
+        </a>
+      {%- else -%}
+        <a href="{{ routes.root_url }}" class="h3 text-white">{{ shop.name }}</a>
+      {%- endif -%}
+
+      <!-- SOCIAL ICONS -->
+      <ul class="social list-unstyled d-flex flex-wrap">
+        {%- if settings.social_facebook_link != blank -%}
+          <li>
+            <a href="{{ settings.social_facebook_link }}" target="_blank">
+              <img src="{{ 'facebook-ico.svg' | asset_url }}" alt="Facebook" width="14" height="27" loading="lazy">
+            </a>
+          </li>
+        {%- endif -%}
+
+        {%- if settings.social_instagram_link != blank -%}
+          <li>
+            <a href="{{ settings.social_instagram_link }}" target="_blank">
+              <img src="{{ 'instagram-ico.svg' | asset_url }}" alt="Instagram" width="25" height="25" loading="lazy">
+            </a>
+          </li>
+        {%- endif -%}
+
+        {%- if settings.social_tiktok_link != blank -%}
+          <li>
+            <a href="{{ settings.social_tiktok_link }}" target="_blank">
+              <img src="{{ 'tiktok-svg.svg' | asset_url }}" alt="TikTok" width="25" height="30" loading="lazy">
+            </a>
+          </li>
+        {%- endif -%}
+
+        {%- if settings.social_x_link != blank -%}
+          <li>
+            <a href="{{ settings.social_x_link }}" target="_blank">
+              <img src="{{ 'x-ico.svg' | asset_url }}" alt="X" width="26" height="27" loading="lazy">
+            </a>
+          </li>
+        {%- endif -%}
+
+        {%- if settings.social_pinterest_link != blank -%}
+          <li>
+            <a href="{{ settings.social_pinterest_link }}" target="_blank">
+              <img src="{{ 'pinterest-ico.svg' | asset_url }}" alt="Pinterest" width="22" height="28" loading="lazy">
+            </a>
+          </li>
+        {%- endif -%}
+      </ul>
+    </div>
+
+    <!-- MIDDLE MENU -->
+    <div class="footer-middle">
+      <ul class="menu flex-wrap d-flex align-items-center justify-content-center">
+        {% if section.settings.footer_menu != blank %}
+          {% for link in linklists[section.settings.footer_menu].links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
+      </ul>
+    </div>
+
+    <!-- BOTTOM TEXT -->
+    <div class="footer-bottom text-center text-white">
+      {{ settings.footer_copyright }}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Custom Footer",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "footer_menu",
+      "label": "Footer Menu"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Footer"
+    }
+  ]
+}
+{% endschema %}
