@@ -137,7 +137,8 @@
       "custom-footer": {
         "type": "custom-footer",
         "settings": {
-          "footer_menu": "footer"
+          "footer_menu": "footer",
+          "copyright_text": "© 2025 all rights reserved."
         }
       }
     },
