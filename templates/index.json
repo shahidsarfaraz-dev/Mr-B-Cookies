@@ -197,6 +197,7 @@
         "faq_item_a7dnH7": {
           "type": "faq_item",
           "settings": {
+            "icon": "shopify://shop_images/cookie.webp",
             "title": "Cookie Questions",
             "content": "This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me."
           }
