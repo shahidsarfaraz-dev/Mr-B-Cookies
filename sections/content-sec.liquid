@@ -1,0 +1,182 @@
+<section class="content-sec">
+  <div class="container">
+    {%- if section.settings.section_heading != blank -%}
+      <h2 class="mb-5">{{ section.settings.section_heading }}</h2>
+    {%- endif -%}
+
+    {% for block in section.blocks %}
+      {% assign is_primary = block.settings.card_style == 'primary' %}
+      {% assign image_right = block.settings.image_position == 'right' %}
+
+      <div
+        class="
+          card
+          {% if is_primary %} bg-primary border-0 {% else %} bg-gray {% endif %}
+          mb-5
+        "
+      >
+        <div class="row gy-3">
+          {%- comment -%}
+            IMAGE COLUMN
+          {%- endcomment -%}
+          <div
+            class="
+              col-lg-5
+              {% if image_right %} order-lg-2 {% endif %}
+            "
+          >
+            {% if block.settings.card_image %}
+              <img
+                src="{{ block.settings.card_image | image_url: width: 600 }}"
+                class="img-fluid w-100 d-block mx-auto section-img"
+                alt="{{ block.settings.title }}"
+                width="382"
+                height="381"
+                loading="lazy"
+                style="max-width: 382px;"
+              >
+            {% endif %}
+          </div>
+
+          {%- comment -%}
+            CONTENT COLUMN
+          {%- endcomment -%}
+          <div
+            class="
+              col-lg-7
+              {% if image_right %} order-lg-1 {% endif %}
+            "
+          >
+            <div class="content-wrapper">
+              <h2 class="{% if is_primary %} text-white {% endif %}">
+                {{ block.settings.title }}
+              </h2>
+
+              <p class="{% if is_primary %} text-white {% endif %} mb-5">
+                {{ block.settings.description }}
+              </p>
+
+              <div class="d-flex gap-5 flex-wrap">
+                {% if block.settings.btn1_label != blank %}
+                  <a
+                    href="{{ block.settings.btn1_url }}"
+                    class="
+                      btn
+                      {% if is_primary %} btn-dark
+                      {% else %} p-0 {% endif %}
+                    "
+                  >
+                    {{ block.settings.btn1_label }}
+                    <img src="{{ 'button-angle.svg' | asset_url }}" width="16" height="10" alt="Icon">
+                  </a>
+                {% endif %}
+
+                {% if block.settings.btn2_label != blank %}
+                  <a
+                    href="{{ block.settings.btn2_url }}"
+                    class="
+                      btn
+                      {% if is_primary %} btn-outline-light
+                      {% else %} p-0 {% endif %}
+                    "
+                  >
+                    {{ block.settings.btn2_label }}
+                    <img src="{{ 'button-angle.svg' | asset_url }}" width="16" height="10" alt="Icon">
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Content Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "This Week’s Cookie"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cookie_card",
+      "name": "Cookie Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Card Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Card Title",
+          "default": "Milk Chocolate Sea Salt"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Card Description",
+          "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        {
+          "type": "select",
+          "id": "card_style",
+          "label": "Card Style",
+          "options": [
+            { "value": "gray", "label": "Gray (Default)" },
+            { "value": "primary", "label": "Primary (Blue Background)" }
+          ],
+          "default": "gray"
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image Position",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "right", "label": "Right" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "text",
+          "id": "btn1_label",
+          "label": "Button 1 Label",
+          "default": "Order Now"
+        },
+        {
+          "type": "url",
+          "id": "btn1_url",
+          "label": "Button 1 URL",
+          "default": "#"
+        },
+        {
+          "type": "text",
+          "id": "btn2_label",
+          "label": "Button 2 Label",
+          "default": "Learn More"
+        },
+        {
+          "type": "url",
+          "id": "btn2_url",
+          "label": "Button 2 URL",
+          "default": "#"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Content Section"
+    }
+  ]
+}
+{% endschema %}
