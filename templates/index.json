@@ -190,11 +190,31 @@
         "rating_score": "4.9",
         "total_reviews": 830
       }
+    },
+    "faq_sec_g9wUUe": {
+      "type": "faq-sec",
+      "blocks": {
+        "faq_item_a7dnH7": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Cookie Questions",
+            "content": "This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me."
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_a7dnH7"
+      ],
+      "name": "FAQ Section",
+      "settings": {
+        "heading": "Frequently Asked Questions"
+      }
     }
   },
   "order": [
     "hero_sec_ynYReG",
     "content_sec_yaQdjx",
-    "testimonial_slider_sec_KybM8Y"
+    "testimonial_slider_sec_KybM8Y",
+    "faq_sec_g9wUUe"
   ]
 }
