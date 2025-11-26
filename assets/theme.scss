@@ -1,5 +1,4 @@
 * {
-    font-family: 'inter-reg', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -71,7 +70,7 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('./../fonts/atop/Atop.ttf');
+    src: url('./fonts/atop/Atop.ttf');
 }
 
 @font-face {
@@ -79,7 +78,7 @@ ul {
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('./../fonts/inter/Inter-Regular.ttf');
+    src: url('./fonts/inter/Inter-Regular.ttf');
 }
 
 @font-face {
@@ -87,7 +86,7 @@ ul {
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url('./../fonts/inter/Inter-Medium.ttf');
+    src: url('./fonts/inter/Inter-Medium.ttf');
 }
 
 @font-face {
@@ -95,7 +94,7 @@ ul {
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url('./../fonts/inter/Inter-SemiBold.ttf');
+    src: url('./fonts/inter/Inter-SemiBold.ttf');
 }
 
 @font-face {
@@ -103,7 +102,7 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('./../fonts/inter/Inter-Bold.ttf');
+    src: url('./fonts/inter/Inter-Bold.ttf');
 }
 
 .atop {
