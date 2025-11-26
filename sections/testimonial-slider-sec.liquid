@@ -73,6 +73,37 @@
   </div>
 </section>
 
+<script>
+  $(document).ready(function () {
+    $('.testimonial-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  });
+</script>
+
 {% schema %}
 {
   "name": "Testimonials Section",
