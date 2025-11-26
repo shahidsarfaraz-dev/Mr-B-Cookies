@@ -199,12 +199,48 @@
           "settings": {
             "icon": "shopify://shop_images/cookie.webp",
             "title": "Cookie Questions",
-            "content": "This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me."
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_WCe4Yp": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/order.webp",
+            "title": "Ordering Questions",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_LpVgFD": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/gift.webp",
+            "title": "Gifting Questions",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_FxbTAb": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/order.webp",
+            "title": "Delivery & Shipping",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_eUheJn": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/pickup.webp",
+            "title": "Pick Up",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
           }
         }
       },
       "block_order": [
-        "faq_item_a7dnH7"
+        "faq_item_a7dnH7",
+        "faq_item_WCe4Yp",
+        "faq_item_LpVgFD",
+        "faq_item_FxbTAb",
+        "faq_item_eUheJn"
       ],
       "name": "FAQ Section",
       "settings": {
