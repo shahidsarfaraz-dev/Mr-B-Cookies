@@ -37,10 +37,85 @@
             "btn2_label": "Learn More",
             "btn2_url": ""
           }
+        },
+        "card_ek9tQc": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/White_Chocolate_Macadmia_Nut_1.webp",
+            "title": "White Chocolate Macadamia Nut",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+            "card_style": "primary",
+            "image_position": "right",
+            "btn1_label": "Order Now",
+            "btn1_url": "",
+            "btn2_label": "Learn More",
+            "btn2_url": ""
+          }
+        },
+        "card_jjgkXy": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/Milk_Chocolate_Sea_Salt_3.webp",
+            "title": "Oatmeal Raisin",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+            "card_style": "gray",
+            "image_position": "left",
+            "btn1_label": "Order Now",
+            "btn1_url": "",
+            "btn2_label": "Learn More",
+            "btn2_url": ""
+          }
+        },
+        "card_X8JVMt": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/White_Chocolate_Macadmia_Nut_4.webp",
+            "title": "Classic Peanut Butter",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+            "card_style": "gray",
+            "image_position": "right",
+            "btn1_label": "Order Now",
+            "btn1_url": "",
+            "btn2_label": "Learn More",
+            "btn2_url": ""
+          }
+        },
+        "card_if3K4R": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/Milk_Chocolate_Sea_Salt_5.webp",
+            "title": "Double Chocolate",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "card_style": "gray",
+            "image_position": "left",
+            "btn1_label": "Order Now",
+            "btn1_url": "",
+            "btn2_label": "Learn More",
+            "btn2_url": ""
+          }
+        },
+        "card_yBBAdD": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/White_Chocolate_Macadmia_Nut_6.webp",
+            "title": "The Morning Roast",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "card_style": "gray",
+            "image_position": "right",
+            "btn1_label": "Order Now",
+            "btn1_url": "",
+            "btn2_label": "Learn More",
+            "btn2_url": ""
+          }
         }
       },
       "block_order": [
-        "card_FzTy8h"
+        "card_FzTy8h",
+        "card_ek9tQc",
+        "card_jjgkXy",
+        "card_X8JVMt",
+        "card_if3K4R",
+        "card_yBBAdD"
       ],
       "name": "Content Section",
       "settings": {
