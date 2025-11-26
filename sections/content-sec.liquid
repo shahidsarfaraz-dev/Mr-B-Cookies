@@ -5,13 +5,13 @@
     {%- endif -%}
 
     {% for block in section.blocks %}
-      {% assign is_primary = block.settings.card_style == 'primary' %}
-      {% assign image_right = block.settings.image_position == 'right' %}
+      {% assign is_primary = block.settings.card_style %}
+      {% assign image_right = block.settings.image_position %}
 
       <div
         class="
           card
-          {% if is_primary %} bg-primary border-0 {% else %} bg-gray {% endif %}
+          {% if is_primary == 'primary' %} bg-primary border-0 {% else %} bg-gray {% endif %}
           mb-5
         "
       >
@@ -22,7 +22,7 @@
           <div
             class="
               col-lg-5
-              {% if image_right %} order-lg-2 {% endif %}
+              {% if image_right == 'right' %} order-lg-2 {% endif %}
             "
           >
             {% if block.settings.card_image %}
@@ -44,15 +44,15 @@
           <div
             class="
               col-lg-7
-              {% if image_right %} order-lg-1 {% endif %}
+              {% if image_right == 'right' %} order-lg-1 {% endif %}
             "
           >
             <div class="content-wrapper">
-              <h2 class="{% if is_primary %} text-white {% endif %}">
+              <h2 class="{% if is_primary == 'primary' %} text-white {% endif %}">
                 {{ block.settings.title }}
               </h2>
 
-              <p class="{% if is_primary %} text-white {% endif %} mb-5">
+              <p class="{% if is_primary == 'primary' %} text-white {% endif %} mb-5">
                 {{ block.settings.description }}
               </p>
 
@@ -62,7 +62,7 @@
                     href="{{ block.settings.btn1_url }}"
                     class="
                       btn
-                      {% if is_primary %} btn-dark
+                      {% if is_primary == 'primary' %} btn-dark
                       {% else %} p-0 {% endif %}
                     "
                   >
@@ -76,7 +76,7 @@
                     href="{{ block.settings.btn2_url }}"
                     class="
                       btn
-                      {% if is_primary %} btn-outline-light
+                      {% if is_primary == 'primary' %} btn-outline-light
                       {% else %} p-0 {% endif %}
                     "
                   >
