@@ -1,0 +1,156 @@
+<section class="testimonial-sec bg-gray">
+  <div class="container">
+    <!-- Top Heading + Rating Card -->
+    <div class="content-wrapper d-flex align-items-center justify-content-between gap-2 flex-wrap mb-4">
+      <h2>{{ section.settings.heading }}</h2>
+
+      <div class="testimonial-card">
+        <div class="top d-flex align-items-center gap-2 mb-2">
+          {% if section.settings.platform_logo %}
+            <img
+              src="{{ section.settings.platform_logo | image_url: width: 200 }}"
+              width="110"
+              height="36"
+              alt="Rating Platform"
+              loading="lazy"
+            >
+          {% endif %}
+          <span class="text-primary fs-20">Rating</span>
+        </div>
+
+        <div class="bottom d-flex align-items-center justify-content-between gap-2">
+          <span class="text-black fs-18 fw-semibold">{{ section.settings.rating_score }}</span>
+
+          <div class="rating d-flex align-items-center gap-1">
+            {% for i in (1..5) %}
+              <img src="{{ 'star.svg' | asset_url }}" width="20" height="20" alt="Star">
+            {% endfor %}
+          </div>
+
+          <span>({{ section.settings.total_reviews }} Reviews)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial Slider -->
+    <div class="testimonial-slider">
+      {% for block in section.blocks %}
+        <div class="testimonial-card">
+          <div class="top d-flex align-items-center gap-3 mb-4">
+            {% if block.settings.customer_image %}
+              <img
+                src="{{ block.settings.customer_image | image_url: width: 100 }}"
+                width="55"
+                height="55"
+                alt="{{ block.settings.customer_name }}"
+                loading="lazy"
+              >
+            {% endif %}
+
+            <div class="content">
+              <div class="name fs-18 text-primary fw-semibold mb-2">
+                {{ block.settings.customer_name }}
+              </div>
+
+              <div class="d-flex align-items-center gap-1">
+                <div class="rating d-flex align-items-center gap-1">
+                  {% for i in (1..block.settings.customer_rating) %}
+                    <img src="{{ 'star.svg' | asset_url }}" width="16" height="16" alt="Star">
+                  {% endfor %}
+                </div>
+
+                <span class="fs-14">{{ block.settings.time_ago }}</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="description mb-0">
+            {{ block.settings.testimonial_text }}
+          </p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "What People Say!"
+    },
+    {
+      "type": "image_picker",
+      "id": "platform_logo",
+      "label": "Rating Platform Logo"
+    },
+    {
+      "type": "text",
+      "id": "rating_score",
+      "label": "Rating Score",
+      "default": "4.9"
+    },
+    {
+      "type": "number",
+      "id": "total_reviews",
+      "label": "Total Reviews",
+      "default": 830
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "testimonial_block",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "customer_image",
+          "label": "Customer Image"
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer Name",
+          "default": "John D."
+        },
+        {
+          "type": "select",
+          "id": "customer_rating",
+          "label": "Customer Rating",
+          "options": [
+            { "value": "1", "label": "1 Star" },
+            { "value": "2", "label": "2 Stars" },
+            { "value": "3", "label": "3 Stars" },
+            { "value": "4", "label": "4 Stars" },
+            { "value": "5", "label": "5 Stars" }
+          ],
+          "default": "5"
+        },
+        {
+          "type": "text",
+          "id": "time_ago",
+          "label": "Time Ago",
+          "default": "4 days ago"
+        },
+        {
+          "type": "textarea",
+          "id": "testimonial_text",
+          "label": "Testimonial Text",
+          "default": "This cookie was amazing! One of my favorites!"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Testimonials Section"
+    }
+  ]
+}
+{% endschema %}
