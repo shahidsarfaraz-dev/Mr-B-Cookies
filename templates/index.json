@@ -20,9 +20,36 @@
         "button_label": "Order Now",
         "button_link": ""
       }
+    },
+    "content_sec_yaQdjx": {
+      "type": "content-sec",
+      "blocks": {
+        "card_FzTy8h": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/Milk_Chocolate_Sea_Salt_1.webp",
+            "title": "Milk Chocolate Sea Salt",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "card_style": "gray",
+            "image_position": "left",
+            "btn1_label": "Order Now",
+            "btn1_url": "",
+            "btn2_label": "Learn More",
+            "btn2_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_FzTy8h"
+      ],
+      "name": "Content Section",
+      "settings": {
+        "section_heading": "This Week’s Cookie"
+      }
     }
   },
   "order": [
-    "hero_sec_ynYReG"
+    "hero_sec_ynYReG",
+    "content_sec_yaQdjx"
   ]
 }
