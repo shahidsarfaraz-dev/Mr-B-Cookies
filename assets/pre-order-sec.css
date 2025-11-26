@@ -1,0 +1,45 @@
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 4vw, 40px);
+  flex-wrap: wrap;
+}
+.price-container .quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.price-container .quantity-controls .qty-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+}
+.price-container .quantity-controls .qty-input {
+  width: 40px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.0823529412);
+  color: #fff;
+  border-radius: 4px;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  outline: none;
+}
+.price-container .discount-price del {
+  color: rgba(255, 255, 255, 0.5647058824);
+  font-size: 22px;
+  font-weight: 500;
+}
+.price-container .discount-price del span {
+  color: rgba(255, 255, 255, 0.5647058824);
+}
+.price-container .discount-label {
+  font-size: 14px;
+  color: #fff;
+}/*# sourceMappingURL=pre-order-sec.css.map */
