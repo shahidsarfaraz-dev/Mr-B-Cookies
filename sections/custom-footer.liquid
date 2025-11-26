@@ -78,7 +78,7 @@
 
     <!-- BOTTOM TEXT -->
     <div class="footer-bottom text-center text-white">
-      {{ settings.footer_copyright }}
+      {{ section.settings.footer_copyright }}
     </div>
   </div>
 </footer>
@@ -91,6 +91,11 @@
       "type": "link_list",
       "id": "footer_menu",
       "label": "Footer Menu"
+    },
+    {
+      "type": "textarea",
+      "id": "copyright_text",
+      "label": "Copyright Text"
     }
   ],
   "presets": [
