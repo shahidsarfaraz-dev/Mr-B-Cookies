@@ -311,6 +311,7 @@
     {{ 'theme.css' | asset_url | stylesheet_tag }}
 
     <script src="{{ 'jquery.js' |  asset_url }}"></script>
+    <script src="{{ 'slick-min.js' |  asset_url }}"></script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
