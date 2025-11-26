@@ -121,10 +121,80 @@
       "settings": {
         "section_heading": "This Week’s Cookie"
       }
+    },
+    "testimonial_slider_sec_KybM8Y": {
+      "type": "testimonial-slider-sec",
+      "blocks": {
+        "testimonial_block_36RUri": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me."
+          }
+        },
+        "testimonial_block_mtdyfe": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_6Xzr88": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_H3xntd": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_LyArJh": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_block_36RUri",
+        "testimonial_block_mtdyfe",
+        "testimonial_block_6Xzr88",
+        "testimonial_block_H3xntd",
+        "testimonial_block_LyArJh"
+      ],
+      "name": "Testimonials Section",
+      "settings": {
+        "heading": "What People Say!",
+        "platform_logo": "shopify://shop_images/google.webp",
+        "rating_score": "4.9",
+        "total_reviews": 830
+      }
     }
   },
   "order": [
     "hero_sec_ynYReG",
-    "content_sec_yaQdjx"
+    "content_sec_yaQdjx",
+    "testimonial_slider_sec_KybM8Y"
   ]
 }
