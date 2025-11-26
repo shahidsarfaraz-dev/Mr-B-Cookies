@@ -1,3 +1,4 @@
+{{ 'faq.css' | asset_url | stylesheet_tag }}
 <section class="faq-sec">
   <div class="container">
     <h2 class="text-center mb-5">{{ section.settings.heading }}</h2>
@@ -19,7 +20,7 @@
               {{ block.settings.title }}
             </h3>
             <img
-              src="{{ block.settings.arrow_icon | image_url: width: 25 }}"
+              src="{{ 'faq-arrow.svg' |  asset_url }}"
               class="arrow-icon"
               width="25"
               height="15"
@@ -29,7 +30,7 @@
           </div>
 
           <div class="faq-content">
-            <p>{{ block.settings.content }}</p>
+            {{ block.settings.content }}
           </div>
         </div>
       {% endfor %}
@@ -83,18 +84,13 @@
           "label": "Left Icon"
         },
         {
-          "type": "image_picker",
-          "id": "arrow_icon",
-          "label": "Arrow Icon"
-        },
-        {
           "type": "text",
           "id": "title",
           "label": "Question Title",
           "default": "Cookie Questions"
         },
         {
-          "type": "textarea",
+          "type": "richtext",
           "id": "content",
           "label": "Answer",
           "default": "Your answer content goes here."
