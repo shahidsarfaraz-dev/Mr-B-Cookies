@@ -9,40 +9,6 @@
  */
 {
   "sections": {
-    "product_single_8WnApA": {
-      "type": "product-single",
-      "blocks": {
-        "title_hFTnrg": {
-          "type": "title",
-          "settings": {}
-        },
-        "description_EEw4RC": {
-          "type": "description",
-          "settings": {}
-        },
-        "price_MizWMY": {
-          "type": "price",
-          "settings": {}
-        },
-        "quantity_selector_GiMGHP": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "add_to_cart_AENXGp": {
-          "type": "add_to_cart",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "title_hFTnrg",
-        "description_EEw4RC",
-        "price_MizWMY",
-        "quantity_selector_GiMGHP",
-        "add_to_cart_AENXGp"
-      ],
-      "name": "Product Hero",
-      "settings": {}
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -209,7 +175,6 @@
     }
   },
   "order": [
-    "product_single_8WnApA",
     "main",
     "image-with-text",
     "multicolumn",
