@@ -6,18 +6,12 @@
 
       <div class="col-xl-6">
         <img
-          src="
-            {% if section.settings.hero_image %}
-                {{ section.settings.hero_image | image_url: width: 1000 }}
-            {% else %}
-                {{ p.featured_image | image_url: width: 1000 }}
-            {% endif %}
-          "
-          style="max-width: {{ section.settings.image_max_width }}px;"
+          src="{% if section.settings.hero_image %}{{ section.settings.hero_image | image_url: width: 1000 }}{% else %}{{ p.featured_image | image_url: width: 1000 }}{% endif %}"
+          style="max-width: 570px;"
           class="img-fluid w-100 d-block mx-auto"
           width="570"
           height="438"
-          alt="Hero Image"
+          alt="{{ p.title }}"
         >
       </div>
 
@@ -31,15 +25,15 @@
               {% when 'rating' %}
                 <div class="d-flex align-items-center gap-3 flex-wrap mb-3">
                   <div class="d-flex align-items-center">
-                    <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20">
-                    <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20">
-                    <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20">
-                    <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20">
-                    <img src="{{ 'dark-star-half.svg' | asset_url }}" width="21" height="20">
+                    <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20" alt="Star Icon">
+                    <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20" alt="Star Icon">
+                    <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20" alt="Star Icon">
+                    <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20" alt="Star Icon">
+                    <img src="{{ 'dark-star-half.svg' | asset_url }}" width="21" height="20" alt="Star Icon">
                   </div>
                   <span class="fw-semibold text-black fs-18">{{ block.settings.rating_text }}</span>
                   <span class="fs-18">|</span>
-                  <span class="fs-18">{{ block.settings.review_count }}</span>
+                  <span class="fs-18">{{ block.settings.review_text }}</span>
                 </div>
 
               {% when 'description' %}
@@ -50,23 +44,29 @@
               {% when 'price' %}
                 <div class="d-flex align-items-center gap-2 flex-wrap mb-3">
                   <span class="discount-price fs-24 fw-medium">
-                    <del>{{ p.compare_at_price | money }}</del>
+                    {% if p.compare_at_price > p.price %}
+                      <del>{{ p.compare_at_price | money }}</del>
+                    {% endif %}
                   </span>
+
                   <span class="price fs-32 text-black fw-extrabold">
                     {{ p.price | money }}
                   </span>
-                  <span> ({{ block.settings.discount_text }}) </span>
+
+                  {% if p.compare_at_price > p.price %}
+                    <span>({{ block.settings.discount_text }})</span>
+                  {% endif %}
                 </div>
 
-              {% when 'buttons' %}
+              {% when 'add_to_cart' %}
                 <div class="buttons d-flex align-items-center gap-4 flex-wrap">
                   {% render 'buy-buttons', product: p %}
                 </div>
 
-              {% when 'text' %}
+              {% when 'custom_text' %}
                 <p>{{ block.settings.text }}</p>
 
-              {% when 'html' %}
+              {% when 'custom_html' %}
                 <div>{{ block.settings.html }}</div>
 
               {% when '@app' %}
@@ -81,20 +81,12 @@
 
 {% schema %}
 {
-  "name": "Product Hero Section",
+  "name": "Product Hero",
   "settings": [
     {
       "type": "image_picker",
       "id": "hero_image",
-      "label": "Override Hero Image"
-    },
-    {
-      "type": "range",
-      "id": "image_max_width",
-      "label": "Image Max Width",
-      "min": 200,
-      "max": 1000,
-      "default": 570
+      "label": "Override Hero Image (optional)"
     }
   ],
   "blocks": [
@@ -104,28 +96,28 @@
       "name": "Rating + Reviews",
       "settings": [
         { "type": "text", "id": "rating_text", "label": "Rating Text", "default": "4.72 Average Rating" },
-        { "type": "text", "id": "review_count", "label": "Total Reviews", "default": "4218 Reviews" }
+        { "type": "text", "id": "review_text", "label": "Review Count", "default": "4218 Reviews" }
       ]
     },
     { "type": "description", "name": "Product Description" },
     {
       "type": "price",
-      "name": "Price + Discount",
-      "settings": [{ "type": "text", "id": "discount_text", "label": "Discount Label", "default": "25% OFF" }]
+      "name": "Product Price",
+      "settings": [{ "type": "text", "id": "discount_text", "label": "Discount % Text", "default": "25% OFF" }]
     },
-    { "type": "buttons", "name": "Buy Buttons" },
+    { "type": "add_to_cart", "name": "Add to Cart Buttons" },
     {
-      "type": "text",
-      "name": "Text Block",
+      "type": "custom_text",
+      "name": "Custom Text Block",
       "settings": [{ "type": "text", "id": "text", "label": "Text" }]
     },
     {
-      "type": "html",
-      "name": "HTML Block",
+      "type": "custom_html",
+      "name": "Custom HTML Block",
       "settings": [{ "type": "html", "id": "html", "label": "HTML" }]
     },
     { "type": "@app" }
   ],
-  "presets": [{ "name": "Product Hero Section" }]
+  "presets": [{ "name": "Product Hero" }]
 }
 {% endschema %}
