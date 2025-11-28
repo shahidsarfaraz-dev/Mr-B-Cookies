@@ -91,6 +91,7 @@
                 {{ 'products.product.add_to_cart' | t }}
               {%- endif -%}
             </span>
+            <img src="{{ 'basket-icon.svg' |  asset_url }}" width="27" height="30" alt="Icon" loading="lazy">
             {%- render 'loading-spinner' -%}
           </button>
           {%- if show_dynamic_checkout -%}
