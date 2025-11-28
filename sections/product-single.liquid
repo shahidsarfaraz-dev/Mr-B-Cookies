@@ -46,32 +46,22 @@
 
                 <!-- PRICE BLOCK -->
               {% when 'price' %}
-                <div class="d-flex align-items-center gap-2 flex-wrap mb-3">
-                  {% if product.compare_at_price > product.price %}
-                    <span class="discount-price fs-24 fw-medium">
-                      <del>{{ product.compare_at_price | money }}</del>
-                    </span>
-                    <span class="price fs-32 text-black fw-extrabold">
-                      {{ product.price | money }}
-                    </span>
-                    <span>
-                      (
-                      {{-
-                        product.compare_at_price
-                        | minus: product.price
-                        | times: 100
-                        | divided_by: product.compare_at_price
-                      -}}
-                      % OFF)
-                    </span>
-                  {% else %}
-                    <span class="price fs-32 text-black fw-extrabold">
-                      {{ product.price | money }}
-                    </span>
-                  {% endif %}
+                {%- render 'price',
+                  product: product,
+                  use_variant: true,
+                  show_badges: true,
+                -%}
+              {%- when 'quantity_selector' -%}
+                <div class="quantity-controls d-flex align-items-center">
+                  <button class="qty-btn" data-action="decrease">-</button>
+                  <input
+                    type="text"
+                    class="form-control qty-input text-center"
+                    value="01"
+                    readonly
+                  >
+                  <button class="qty-btn" data-action="increase">+</button>
                 </div>
-
-                <!-- ADD TO CART BLOCK -->
               {% when 'add_to_cart' %}
                 <div class="buttons d-flex align-items-center gap-4 flex-wrap">
                   <!-- ORDER NOW (ADD TO CART MAIN VARIANT) -->
@@ -111,7 +101,6 @@
 {% schema %}
 {
   "name": "Product Hero Section",
-  "tag": "section",
   "settings": [],
   "blocks": [
     {
@@ -129,6 +118,10 @@
     {
       "type": "price",
       "name": "Price Block"
+    },
+    {
+      "type": "quantity_selector",
+      "name": "Quantity Selector"
     },
     {
       "type": "add_to_cart",
