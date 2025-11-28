@@ -24,8 +24,8 @@
           "type": "price",
           "settings": {}
         },
-        "buy_buttons_8de3Ec": {
-          "type": "buy_buttons",
+        "add_to_cart_AENXGp": {
+          "type": "add_to_cart",
           "settings": {}
         }
       },
@@ -33,12 +33,10 @@
         "title_hFTnrg",
         "description_EEw4RC",
         "price_MizWMY",
-        "buy_buttons_8de3Ec"
+        "add_to_cart_AENXGp"
       ],
       "name": "Product Hero",
-      "settings": {
-        "image_max_width": 570
-      }
+      "settings": {}
     },
     "main": {
       "type": "main-product",
