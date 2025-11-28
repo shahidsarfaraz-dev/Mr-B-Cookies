@@ -2,16 +2,15 @@
 <section class="hero-sec v2 bg-pink">
   <div class="container">
     <div class="row g-3">
-      {% assign p = product %}
-
+      <!-- LEFT IMAGE (STATIC OR UPDATE LATER IF NEEDED) -->
       <div class="col-xl-6">
         <img
-          src="{% if section.settings.hero_image %}{{ section.settings.hero_image | image_url: width: 1000 }}{% else %}{{ p.featured_image | image_url: width: 1000 }}{% endif %}"
+          src="{{ product.featured_image | image_url: width: 570 }}"
           style="max-width: 570px;"
           class="img-fluid w-100 d-block mx-auto"
           width="570"
           height="438"
-          alt="{{ p.title }}"
+          alt="{{ product.title }}"
         >
       </div>
 
@@ -19,57 +18,87 @@
         <div class="content-wrapper h-100 d-flex flex-column justify-content-center">
           {% for block in section.blocks %}
             {% case block.type %}
+                <!-- TITLE BLOCK -->
               {% when 'title' %}
-                <h1>{{ p.title }}</h1>
+                <h1>{{ product.title }}</h1>
 
+                <!-- RATING BLOCK -->
               {% when 'rating' %}
                 <div class="d-flex align-items-center gap-3 flex-wrap mb-3">
                   <div class="d-flex align-items-center">
+                    <!-- You can replace with app or logic -->
                     <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20" alt="Star Icon">
                     <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20" alt="Star Icon">
                     <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20" alt="Star Icon">
                     <img src="{{ 'dark-star.svg' | asset_url }}" width="21" height="20" alt="Star Icon">
                     <img src="{{ 'dark-star-half.svg' | asset_url }}" width="21" height="20" alt="Star Icon">
                   </div>
-                  <span class="fw-semibold text-black fs-18">{{ block.settings.rating_text }}</span>
+                  <span class="fw-semibold text-black fs-18">4.72 Average Rating</span>
                   <span class="fs-18">|</span>
-                  <span class="fs-18">{{ block.settings.review_text }}</span>
+                  <span class="fs-18">4218 Reviews</span>
                 </div>
 
+                <!-- DESCRIPTION BLOCK -->
               {% when 'description' %}
                 <p class="description mb-3">
-                  {{ p.description | strip_html }}
+                  {{ product.description | strip_html | truncatewords: 40 }}
                 </p>
 
+                <!-- PRICE BLOCK -->
               {% when 'price' %}
                 <div class="d-flex align-items-center gap-2 flex-wrap mb-3">
-                  <span class="discount-price fs-24 fw-medium">
-                    {% if p.compare_at_price > p.price %}
-                      <del>{{ p.compare_at_price | money }}</del>
-                    {% endif %}
-                  </span>
-
-                  <span class="price fs-32 text-black fw-extrabold">
-                    {{ p.price | money }}
-                  </span>
-
-                  {% if p.compare_at_price > p.price %}
-                    <span>({{ block.settings.discount_text }})</span>
+                  {% if product.compare_at_price > product.price %}
+                    <span class="discount-price fs-24 fw-medium">
+                      <del>{{ product.compare_at_price | money }}</del>
+                    </span>
+                    <span class="price fs-32 text-black fw-extrabold">
+                      {{ product.price | money }}
+                    </span>
+                    <span>
+                      (
+                      {{-
+                        product.compare_at_price
+                        | minus: product.price
+                        | times: 100
+                        | divided_by: product.compare_at_price
+                      -}}
+                      % OFF)
+                    </span>
+                  {% else %}
+                    <span class="price fs-32 text-black fw-extrabold">
+                      {{ product.price | money }}
+                    </span>
                   {% endif %}
                 </div>
 
+                <!-- ADD TO CART BLOCK -->
               {% when 'add_to_cart' %}
                 <div class="buttons d-flex align-items-center gap-4 flex-wrap">
-                  {% render 'buy-buttons', product: p %}
+                  <!-- ORDER NOW (ADD TO CART MAIN VARIANT) -->
+                  <form method="post" action="/cart/add" class="w-100" style="max-width: 288px;">
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    <button type="submit" class="btn btn-dark w-100">Order Now</button>
+                  </form>
+
+                  <!-- ADD TO BASKET -->
+                  <form method="post" action="/cart/add" class="w-100" style="max-width: 288px;">
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    <button
+                      type="submit"
+                      class="btn btn-outline-dark w-100 d-flex align-items-center justify-content-center gap-2"
+                    >
+                      Add to Basket
+                      <img src="{{ 'basket-icon.svg' | asset_url }}" width="27" height="30" alt="Icon">
+                    </button>
+                  </form>
                 </div>
 
+                <!-- CUSTOM TEXT BLOCK -->
               {% when 'custom_text' %}
                 <p>{{ block.settings.text }}</p>
 
-              {% when 'custom_html' %}
-                <div>{{ block.settings.html }}</div>
-
-              {% when '@app' %}
+                <!-- APP BLOCK -->
+              {% when 'app' %}
                 {% render block %}
             {% endcase %}
           {% endfor %}
@@ -81,43 +110,51 @@
 
 {% schema %}
 {
-  "name": "Product Hero",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "hero_image",
-      "label": "Override Hero Image (optional)"
-    }
-  ],
+  "name": "Product Hero Section",
+  "tag": "section",
+  "settings": [],
   "blocks": [
-    { "type": "title", "name": "Product Title" },
+    {
+      "type": "title",
+      "name": "Product Title"
+    },
     {
       "type": "rating",
-      "name": "Rating + Reviews",
-      "settings": [
-        { "type": "text", "id": "rating_text", "label": "Rating Text", "default": "4.72 Average Rating" },
-        { "type": "text", "id": "review_text", "label": "Review Count", "default": "4218 Reviews" }
-      ]
+      "name": "Rating Block"
     },
-    { "type": "description", "name": "Product Description" },
+    {
+      "type": "description",
+      "name": "Description"
+    },
     {
       "type": "price",
-      "name": "Product Price",
-      "settings": [{ "type": "text", "id": "discount_text", "label": "Discount % Text", "default": "25% OFF" }]
+      "name": "Price Block"
     },
-    { "type": "add_to_cart", "name": "Add to Cart Buttons" },
+    {
+      "type": "add_to_cart",
+      "name": "Add to Cart Button"
+    },
     {
       "type": "custom_text",
-      "name": "Custom Text Block",
-      "settings": [{ "type": "text", "id": "text", "label": "Text" }]
+      "name": "Custom Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Custom text"
+        }
+      ]
     },
     {
-      "type": "custom_html",
-      "name": "Custom HTML Block",
-      "settings": [{ "type": "html", "id": "html", "label": "HTML" }]
-    },
-    { "type": "@app" }
+      "type": "app",
+      "name": "App block",
+      "limit": 10
+    }
   ],
-  "presets": [{ "name": "Product Hero" }]
+  "presets": [
+    {
+      "name": "Product Hero Section"
+    }
+  ]
 }
 {% endschema %}
