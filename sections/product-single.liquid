@@ -1,0 +1,143 @@
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+<section class="hero-sec v2 bg-pink">
+  <div class="container">
+    <div class="row g-3">
+      {%- assign product = section.settings.product -%}
+
+      <!-- LEFT IMAGE -->
+      <div class="col-xl-6">
+        {% if section.settings.hero_image %}
+          <img
+            src="{{ section.settings.hero_image | image_url: width: 1000 }}"
+            class="img-fluid w-100 d-block mx-auto"
+            style="max-width: {{ section.settings.image_max_width }}px;"
+            width="{{ section.settings.hero_image.width }}"
+            height="{{ section.settings.hero_image.height }}"
+          >
+        {% elsif product.featured_image %}
+          <img
+            src="{{ product.featured_image | image_url: width: 1000 }}"
+            class="img-fluid w-100 d-block mx-auto"
+            style="max-width: {{ section.settings.image_max_width }}px;"
+            width="{{ product.featured_image.width }}"
+            height="{{ product.featured_image.height }}"
+          >
+        {% endif %}
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="col-xl-6">
+        <div class="content-wrapper h-100 d-flex flex-column justify-content-center">
+          {% for block in section.blocks %}
+            <div id="block-{{ block.id }}" class="mb-4">
+              {% case block.type %}
+                {% when 'title' %}
+                  <h1>{{ product.title }}</h1>
+
+                {% when 'description' %}
+                  <p class="description">{{ product.description | strip_html }}</p>
+
+                {% when 'price' %}
+                  {% render 'price', product: product %}
+
+                {% when 'inventory' %}
+                  {% if product.selected_or_first_available_variant.inventory_quantity > 0 %}
+                    <p class="text-success fw-bold">
+                      In stock: {{ product.selected_or_first_available_variant.inventory_quantity }}
+                    </p>
+                  {% else %}
+                    <p class="text-danger fw-bold">Out of stock</p>
+                  {% endif %}
+
+                {% when 'buy_buttons' %}
+                  {% render 'buy-buttons', product: product %}
+
+                {% when 'text' %}
+                  <p>{{ block.settings.text }}</p>
+
+                {% when 'html' %}
+                  <div>{{ block.settings.html }}</div>
+
+                {% when 'separator' %}
+                  <hr>
+
+                {% when '@app' %}
+                  {% render block %}
+              {% endcase %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Hero",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Select Product"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero Image (optional)"
+    },
+    {
+      "type": "range",
+      "id": "image_max_width",
+      "label": "Image Max Width",
+      "min": 200,
+      "max": 1000,
+      "step": 10,
+      "default": 570
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "title",
+      "name": "Product Title"
+    },
+    {
+      "type": "description",
+      "name": "Product Description"
+    },
+    {
+      "type": "price",
+      "name": "Product Price"
+    },
+    {
+      "type": "inventory",
+      "name": "Inventory"
+    },
+    {
+      "type": "buy_buttons",
+      "name": "Add To Cart Buttons"
+    },
+    {
+      "type": "text",
+      "name": "Text Block",
+      "settings": [{ "type": "text", "id": "text", "label": "Text" }]
+    },
+    {
+      "type": "html",
+      "name": "HTML Block",
+      "settings": [{ "type": "html", "id": "html", "label": "HTML" }]
+    },
+    {
+      "type": "separator",
+      "name": "Separator"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+
+  "presets": [{ "name": "Product Hero" }]
+}
+{% endschema %}
