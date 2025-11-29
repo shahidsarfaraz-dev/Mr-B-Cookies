@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "preorder_hero_8aFpym": {
+      "type": "preorder-hero",
+      "name": "Hero Section V4",
+      "settings": {
+        "hero_image": "shopify://shop_images/pre-order-hero-img.webp",
+        "hero_heading": "Pre-Order This Week’s Batch",
+        "hero_text": "<p><strong>Warm, thick, freshly baked Milk Chocolate Sea Salt cookies — delivered or pickup Saturday.</strong></p>"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -18,6 +27,7 @@
     }
   },
   "order": [
+    "preorder_hero_8aFpym",
     "main"
   ]
 }
