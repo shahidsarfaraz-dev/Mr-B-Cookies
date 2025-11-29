@@ -319,6 +319,13 @@ section {
   margin: 0 10px;
 }
 
+.card .card-information .card__heading {
+  font-size: 22px;
+}
+.card .card-information .price-item--sale {
+  font-size: 18px;
+}
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1300px;
