@@ -1,0 +1,90 @@
+<section class="half-sec {% if section.settings.image_position == 'left' %}c-right{% else %}c-left{% endif %}">
+  <div class="container">
+    <div style="max-width: 744px;" class="mx-auto mb-5">
+      {% if section.settings.subtitle != blank %}
+        <span class="d-block fs-20 text-center text-primary fw-semibold mb-3">{{ section.settings.subtitle }}</span>
+      {% endif %}
+      {% if section.settings.title != blank %}
+        <h2 class="text-center mb-0">{{ section.settings.title }}</h2>
+      {% endif %}
+    </div>
+    <div class="row g-3">
+      {%- capture image_html -%}
+        <div class="col-lg-6 order-lg-2">
+          {% if section.settings.image != blank %}
+            <img 
+              src="{{ section.settings.image | image_url: width: 626 }}"
+              style="max-width: 626px;"
+              class="img-fluid w-100 d-block rounded-40 mx-auto"
+              width="626"
+              height="449"
+              alt="Section Image">
+          {% endif %}
+        </div>
+      {%- endcapture -%}
+
+      {%- capture content_html -%}
+        <div class="col-lg-6 order-lg-1">
+          <div class="content-wrapper">
+            {% if section.settings.description != blank %}
+              <div class="fs-18 mb-0">
+                {{ section.settings.description }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {%- endcapture -%}
+
+      {% if section.settings.image_position == 'left' %}
+        {{ image_html }}
+        {{ content_html }}
+      {% else %}
+        {{ content_html }}
+        {{ image_html }}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Half Heading Top",
+  "settings": [
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Half Heading Top"
+    }
+  ]
+}
+{% endschema %}
