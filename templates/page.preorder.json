@@ -52,7 +52,7 @@
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "box-of-6-milk-chocolate-sea-salt",
-        "color_scheme": "",
+        "color_scheme": "scheme-2befe534-d40e-4c64-923d-f45a5feac2b6",
         "secondary_background": true,
         "media_size": "small",
         "constrain_to_viewport": true,
