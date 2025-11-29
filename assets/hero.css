@@ -1,5 +1,5 @@
 .hero-sec {
-  padding: clamp(120px, 22.5vw, 225px) 0;
+  padding: clamp(80px, 12vw, 160px) 0;
   background: center/cover no-repeat;
   position: relative;
 }
