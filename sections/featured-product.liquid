@@ -68,7 +68,7 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
-  <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
+  <section class="color-{{ section.settings.color_scheme }} p-o {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %}">
     <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
       <div class="featured-product product product--{{ section.settings.media_size }} grid grid--1-col gradient color-{{ section.settings.color_scheme }} product--{{ section.settings.media_position }}{% if section.settings.secondary_background == false %} isolate{% endif %} {% if product.media.size > 0 or section.settings.product == blank %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
         <div class="grid__item product__media-wrapper">
@@ -88,7 +88,7 @@
         <div class="product__info-wrapper grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           <section
             id="ProductInfo-{{ section.id }}"
-            class="product__info-container"
+            class="product__info-container p-0"
             data-section="{{ section.id }}"
             data-url="{{ product.url }}"
           >
@@ -505,7 +505,7 @@
 {
   "name": "t:sections.featured-product.name",
   "tag": "section",
-  "class": "section section-featured-product",
+  "class": "section section-featured-product p-0",
   "disabled_on": {
     "groups": ["header", "footer"]
   },
