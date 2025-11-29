@@ -106,7 +106,7 @@
                     {{- block.settings.text -}}
                   </p>
                 {%- when 'title' -%}
-                  <h2 class="product__title text-white h-3 {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                  <h2 class="product__title text-white h3 {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
                     {%- unless placeholder -%}
                       {{ product.title | escape }}
                     {%- else -%}
