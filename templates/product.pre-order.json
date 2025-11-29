@@ -1,0 +1,241 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "caption",
+        "description",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-fde40476-b00b-4e6c-991c-7002403f9e67",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "half_sec_yn9GxU": {
+      "type": "half-sec",
+      "name": "Half Section",
+      "settings": {
+        "image_position": "left",
+        "image": "shopify://shop_images/cookie-img-1.webp",
+        "title": "Made from scratch with fresh ingredients every day",
+        "subtitle": "Gourmet - Traditional - Delivered",
+        "description": "<p>The best moments in life are shared over something warm, soft, and fresh from the oven. What began as a weekend hobby soon became a full-blown passion — and now, a way to bring a little extra comfort.</p>"
+      }
+    },
+    "testimonial_slider_sec_fnte9b": {
+      "type": "testimonial-slider-sec",
+      "blocks": {
+        "testimonial_block_7BDGmi": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me."
+          }
+        },
+        "testimonial_block_w3aYqR": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_C6Parw": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_APtzLk": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_RLBQNq": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_block_7BDGmi",
+        "testimonial_block_w3aYqR",
+        "testimonial_block_C6Parw",
+        "testimonial_block_APtzLk",
+        "testimonial_block_RLBQNq"
+      ],
+      "name": "Testimonials Section",
+      "settings": {
+        "heading": "What People Say!",
+        "platform_logo": "shopify://shop_images/google.webp",
+        "rating_score": "4.9",
+        "total_reviews": 830
+      }
+    },
+    "faq_sec_9eiDH3": {
+      "type": "faq-sec",
+      "blocks": {
+        "faq_item_pAabqt": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/cookie.webp",
+            "title": "Cookie Questions",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_t6QjKf": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/order.webp",
+            "title": "Ordering Questions",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_pzi7fC": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/gift.webp",
+            "title": "Gifting Questions",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_KCD6tx": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/order.webp",
+            "title": "Delivery & Shipping",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_N7Kj7P": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/pickup.webp",
+            "title": "Pick Up",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_pAabqt",
+        "faq_item_t6QjKf",
+        "faq_item_pzi7fC",
+        "faq_item_KCD6tx",
+        "faq_item_N7Kj7P"
+      ],
+      "name": "FAQ Section",
+      "settings": {
+        "heading": "Frequently Asked Questions"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "half_sec_yn9GxU",
+    "testimonial_slider_sec_fnte9b",
+    "faq_sec_9eiDH3",
+    "related-products"
+  ]
+}
