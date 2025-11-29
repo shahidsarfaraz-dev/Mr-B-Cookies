@@ -27,6 +27,10 @@
             "heading_size": "h2"
           }
         },
+        "description_k3YHEq": {
+          "type": "description",
+          "settings": {}
+        },
         "price_wKBQXH": {
           "type": "price",
           "settings": {}
@@ -45,6 +49,7 @@
       },
       "block_order": [
         "title_7tAH9W",
+        "description_k3YHEq",
         "price_wKBQXH",
         "quantity_selector_Qxdm7E",
         "buy_buttons_kXBTAQ"
