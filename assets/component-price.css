@@ -98,3 +98,7 @@
   margin-top: 0.2rem;
   color: rgba(var(--color-foreground), 0.7);
 }
+
+.price-item--sale {
+  font-size: clamp(26px, 3.2vw, 32px);
+}
