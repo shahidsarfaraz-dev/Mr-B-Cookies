@@ -53,7 +53,7 @@
       "settings": {
         "product": "box-of-6-milk-chocolate-sea-salt",
         "color_scheme": "",
-        "secondary_background": false,
+        "secondary_background": true,
         "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
