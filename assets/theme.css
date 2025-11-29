@@ -319,13 +319,13 @@ section {
   margin: 0 10px;
 }
 
-.card .card-information .card__heading {
+.card .card__information .card__heading {
   font-size: 22px !important;
 }
-.card .card-information .price-item--sale {
+.card .card__information .price-item--sale {
   font-size: 18px;
 }
-.card .card-information .quick-add {
+.card .card__information .quick-add {
   margin-bottom: 0;
 }
 
