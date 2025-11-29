@@ -86,6 +86,131 @@
         "description": "<p>The best moments in life are shared over something warm, soft, and fresh from the oven. What began as a weekend hobby soon became a full-blown passion — and now, a way to bring a little extra comfort.</p>"
       }
     },
+    "testimonial_slider_sec_fnte9b": {
+      "type": "testimonial-slider-sec",
+      "blocks": {
+        "testimonial_block_7BDGmi": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me."
+          }
+        },
+        "testimonial_block_w3aYqR": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_C6Parw": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_APtzLk": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_RLBQNq": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_block_7BDGmi",
+        "testimonial_block_w3aYqR",
+        "testimonial_block_C6Parw",
+        "testimonial_block_APtzLk",
+        "testimonial_block_RLBQNq"
+      ],
+      "name": "Testimonials Section",
+      "settings": {
+        "heading": "What People Say!",
+        "platform_logo": "shopify://shop_images/google.webp",
+        "rating_score": "4.9",
+        "total_reviews": 830
+      }
+    },
+    "faq_sec_9eiDH3": {
+      "type": "faq-sec",
+      "blocks": {
+        "faq_item_pAabqt": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/cookie.webp",
+            "title": "Cookie Questions",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_t6QjKf": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/order.webp",
+            "title": "Ordering Questions",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_pzi7fC": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/gift.webp",
+            "title": "Gifting Questions",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_KCD6tx": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/order.webp",
+            "title": "Delivery & Shipping",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        },
+        "faq_item_N7Kj7P": {
+          "type": "faq_item",
+          "settings": {
+            "icon": "shopify://shop_images/pickup.webp",
+            "title": "Pick Up",
+            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_pAabqt",
+        "faq_item_t6QjKf",
+        "faq_item_pzi7fC",
+        "faq_item_KCD6tx",
+        "faq_item_N7Kj7P"
+      ],
+      "name": "FAQ Section",
+      "settings": {
+        "heading": "Frequently Asked Questions"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -109,6 +234,8 @@
   "order": [
     "main",
     "half_sec_yn9GxU",
+    "testimonial_slider_sec_fnte9b",
+    "faq_sec_9eiDH3",
     "related-products"
   ]
 }
