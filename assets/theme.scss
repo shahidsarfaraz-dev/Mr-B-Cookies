@@ -380,10 +380,13 @@ section {
 .card {
     .card-information {
         .card__heading {
-            font-size: 22px;
+            font-size: 22px !important;
         }
         .price-item--sale {
             font-size: 18px;
+        }
+        .quick-add {
+            margin-bottom: 0;
         }
     }
 }

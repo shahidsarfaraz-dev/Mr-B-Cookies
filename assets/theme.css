@@ -320,10 +320,13 @@ section {
 }
 
 .card .card-information .card__heading {
-  font-size: 22px;
+  font-size: 22px !important;
 }
 .card .card-information .price-item--sale {
   font-size: 18px;
+}
+.card .card-information .quick-add {
+  margin-bottom: 0;
 }
 
 @media (min-width: 1400px) {
