@@ -1,0 +1,137 @@
+{{ 'order.css' | asset_url | stylesheet_tag }}
+<section class="order-sec">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-xl-5 order-xl-2">
+        {% if section.settings.main_image %}
+          <img 
+            src="{{ section.settings.main_image | image_url }}" 
+            class="img-fluid w-100 d-block mx-auto"
+            style="max-width: 493px;" 
+            width="493" 
+            height="657" 
+            alt="Section Image" 
+            loading="lazy">
+        {% endif %}
+      </div>
+
+      <div class="col-xl-7 order-xl-1">
+        <div class="content-wrapper">
+
+          {% if section.settings.heading %}
+            <h2>{{ section.settings.heading }}</h2>
+          {% endif %}
+
+          <div class="order-wrapper mb-3">
+            {% for block in section.blocks %}
+              {% if block.type == 'schedule_row' %}
+                <div class="content {% if forloop.last %}mb-0{% else %}mb-4{% endif %}">
+                  {% if block.settings.icon %}
+                    <img 
+                      src="{{ block.settings.icon | image_url }}" 
+                      width="58" 
+                      height="44" 
+                      alt="Icon" 
+                      loading="lazy">
+                  {% endif %}
+
+                  <span class="title">{{ block.settings.left_text }}</span>
+                  <div class="border"></div>
+                  <span class="title">{{ block.settings.right_text }}</span>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          <div class="order-card">
+            {% for block in section.blocks %}
+              {% if block.type == 'alert_row' %}
+                <div class="card-inner">
+                  {% if block.settings.alert_icon %}
+                    <img 
+                      src="{{ block.settings.alert_icon | image_url }}" 
+                      width="27" 
+                      height="24" 
+                      alt="Icon" 
+                      loading="lazy">
+                  {% endif %}
+                  <p class="fw-medium mb-0">{{ block.settings.alert_text }}</p>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Order Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Availability & Schedule"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "schedule_row",
+      "name": "Schedule Row",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "left_text",
+          "label": "Left Text",
+          "default": "Pre-Orders Open"
+        },
+        {
+          "type": "text",
+          "id": "right_text",
+          "label": "Right Text",
+          "default": "Wednesday Mornings"
+        }
+      ]
+    },
+    {
+      "type": "alert_row",
+      "name": "Alert Row",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "alert_icon",
+          "label": "Alert Icon"
+        },
+        {
+          "type": "text",
+          "id": "alert_text",
+          "label": "Alert Text",
+          "default": "Orders after Tuesday midnight → Next Saturday"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Schedule Section"
+    }
+  ]
+}
+{% endschema %}
