@@ -77,11 +77,76 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "schedule_7DdNmt": {
+      "type": "schedule",
+      "blocks": {
+        "schedule_row_GVAkPk": {
+          "type": "schedule_row",
+          "settings": {
+            "icon": "shopify://shop_images/order-icon.svg",
+            "left_text": "Pre-Orders Open",
+            "right_text": "Wednesday Mornings"
+          }
+        },
+        "schedule_row_HpzWTW": {
+          "type": "schedule_row",
+          "settings": {
+            "icon": "shopify://shop_images/order-icon-2.svg",
+            "left_text": "Pre-Orders Open",
+            "right_text": "Tuesday Midnight"
+          }
+        },
+        "schedule_row_ECCC8X": {
+          "type": "schedule_row",
+          "settings": {
+            "icon": "shopify://shop_images/order-icon-3.svg",
+            "left_text": "Orders Pickup",
+            "right_text": "Saturday: 12:30 PM – 02 PM"
+          }
+        },
+        "schedule_row_KpT7kt": {
+          "type": "schedule_row",
+          "settings": {
+            "icon": "shopify://shop_images/order-icon-4.svg",
+            "left_text": "Orders Delivery",
+            "right_text": "Saturday: 12:30 PM – 08 PM"
+          }
+        },
+        "alert_row_GP7fUX": {
+          "type": "alert_row",
+          "settings": {
+            "alert_icon": "shopify://shop_images/alert.svg",
+            "alert_text": "Orders after Tuesday midnight → Next Saturday"
+          }
+        },
+        "alert_row_hxUqNT": {
+          "type": "alert_row",
+          "settings": {
+            "alert_icon": "shopify://shop_images/alert.svg",
+            "alert_text": "We can bake only 25 boxes per week. Order early before we’re sold out!"
+          }
+        }
+      },
+      "block_order": [
+        "schedule_row_GVAkPk",
+        "schedule_row_HpzWTW",
+        "schedule_row_ECCC8X",
+        "schedule_row_KpT7kt",
+        "alert_row_GP7fUX",
+        "alert_row_hxUqNT"
+      ],
+      "name": "Schedule Section",
+      "settings": {
+        "main_image": "shopify://shop_images/pre-order-section-img2.webp",
+        "heading": "Availability & Schedule"
+      }
     }
   },
   "order": [
     "preorder_hero_8aFpym",
     "featured_product_dTPVDP",
-    "main"
+    "main",
+    "schedule_7DdNmt"
   ]
 }
