@@ -18,6 +18,53 @@
         "hero_text": "<p><strong>Warm, thick, freshly baked Milk Chocolate Sea Salt cookies — delivered or pickup Saturday.</strong></p>"
       }
     },
+    "featured_product_dTPVDP": {
+      "type": "featured-product",
+      "blocks": {
+        "title_7tAH9W": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_wKBQXH": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_selector_Qxdm7E": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_kXBTAQ": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title_7tAH9W",
+        "price_wKBQXH",
+        "quantity_selector_Qxdm7E",
+        "buy_buttons_kXBTAQ"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "box-of-6-milk-chocolate-sea-salt",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -29,6 +76,7 @@
   },
   "order": [
     "preorder_hero_8aFpym",
+    "featured_product_dTPVDP",
     "main"
   ]
 }
