@@ -16,9 +16,18 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_banner_VFkA7P": {
+      "type": "about-banner",
+      "name": "Hero v3 Banner",
+      "settings": {
+        "title": "It’s Not Just Cookies— It’s Comfort",
+        "text": "Mr. B’s Cookies started from a simple belief: the best moments in life are shared over something warm, soft, and fresh from the oven."
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_banner_VFkA7P"
   ]
 }
