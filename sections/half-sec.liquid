@@ -1,4 +1,4 @@
-<section class="half-sec">
+<section class="half-sec {% if section.settings.image_position == 'left' %}c-right{% else %}c-left{% endif %}">
   <div class="container">
     <div class="row g-3">
       {%- capture image_html -%}
@@ -20,7 +20,7 @@
           <div class="content h-100 d-flex flex-column justify-content-center">
 
             {% if section.settings.title != blank %}
-              <h1>{{ section.settings.title }}</h1>
+              <h2 class="">{{ section.settings.title }}</h2>
             {% endif %}
 
             {% if section.settings.subtitle != blank %}
@@ -85,7 +85,7 @@
       "label": "Subtitle"
     },
     {
-      "type": "textarea",
+      "type": "richtext",
       "id": "description",
       "label": "Description"
     }

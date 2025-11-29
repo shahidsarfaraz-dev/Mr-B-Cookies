@@ -290,10 +290,10 @@ section {
   background: center/cover no-repeat;
 }
 
-.half-sec.right .content-wrapper {
+.half-sec.c-right .content-wrapper {
   padding-left: 40px;
 }
-.half-sec.left .content-wrapper {
+.half-sec.c-left .content-wrapper {
   padding-right: 40px;
 }
 
@@ -343,10 +343,10 @@ section {
   .btn {
     font-size: 14px;
   }
-  .half-sec.right .content-wrapper {
+  .half-sec.c-right .content-wrapper {
     padding-left: 0;
   }
-  .half-sec.left .content-wrapper {
+  .half-sec.c-left .content-wrapper {
     padding-right: 0;
   }
   .button-md-none {

@@ -342,13 +342,13 @@ section {
 }
 
 .half-sec {
-    &.right {
+    &.c-right {
         .content-wrapper {
             padding-left: 40px;
         }
     }
 
-    &.left {
+    &.c-left {
         .content-wrapper {
             padding-right: 40px;
         }
@@ -412,13 +412,13 @@ section {
     }
 
     .half-sec {
-        &.right {
+        &.c-right {
             .content-wrapper {
                 padding-left: 0;
             }
         }
 
-        &.left {
+        &.c-left {
             .content-wrapper {
                 padding-right: 0;
             }
