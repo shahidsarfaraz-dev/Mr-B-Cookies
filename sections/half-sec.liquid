@@ -1,0 +1,99 @@
+<section class="half-sec">
+  <div class="container">
+    <div class="row g-3">
+      {%- capture image_html -%}
+        <div class="col-xl-6">
+          {% if section.settings.image != blank %}
+            <img 
+              src="{{ section.settings.image | image_url: width: 626 }}"
+              style="max-width: 626px;"
+              class="img-fluid w-100 d-block rounded-40 mx-auto"
+              width="626"
+              height="449"
+              alt="Section Image">
+          {% endif %}
+        </div>
+      {%- endcapture -%}
+
+      {%- capture content_html -%}
+        <div class="col-xl-6">
+          <div class="content h-100 d-flex flex-column justify-content-center">
+
+            {% if section.settings.title != blank %}
+              <h1>{{ section.settings.title }}</h1>
+            {% endif %}
+
+            {% if section.settings.subtitle != blank %}
+              <span class="fs-24 fw-semibold text-primary d-block mb-3">
+                {{ section.settings.subtitle }}
+              </span>
+            {% endif %}
+
+            {% if section.settings.description != blank %}
+              <p class="fs-18 mb-0">
+                {{ section.settings.description }}
+              </p>
+            {% endif %}
+
+          </div>
+        </div>
+      {%- endcapture -%}
+
+      {% if section.settings.image_position == 'left' %}
+        {{ image_html }}
+        {{ content_html }}
+      {% else %}
+        <div class="order-xl-2 col-xl-6">
+          {{ image_html }}
+        </div>
+
+        <div class="order-xl-1 col-xl-6">
+          {{ content_html }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Half Section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Half Section"
+    }
+  ]
+}
+{% endschema %}
