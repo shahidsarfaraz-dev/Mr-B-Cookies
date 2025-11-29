@@ -7,8 +7,7 @@
   padding: clamp(60px, 8vw, 100px) 0;
 }
 .hero-sec.v3 {
-  padding-top: clamp(120px, 17vw, 170px);
-  padding-bottom: clamp(50px, 7vw, 70px);
+  padding: clamp(50px, 7vw, 70px) 0;
 }
 .hero-sec.v4 {
   padding: clamp(60px, 8vw, 100px) 0;

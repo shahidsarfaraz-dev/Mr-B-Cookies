@@ -1,0 +1,38 @@
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+
+<section class="hero-sec v3 bg-gray-light">
+  <div class="container">
+    <div style="max-width: 756px;" class="mx-auto content-wrapper">
+      <h1 class="text-center">
+        {{ section.settings.title }}
+      </h1>
+      <p class="fw-medium fs-20 text-center mb-0">
+        {{ section.settings.text }}
+      </p>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Hero v3 Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "It’s Not Just Cookies— It’s Comfort"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Description",
+      "default": "Mr. B’s Cookies started from a simple belief: the best moments in life are shared over something warm, soft, and fresh from the oven."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero v3 Banner"
+    }
+  ]
+}
+{% endschema %}
