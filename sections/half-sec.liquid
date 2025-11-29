@@ -30,9 +30,9 @@
             {% endif %}
 
             {% if section.settings.description != blank %}
-              <p class="fs-18 mb-0">
+              <div class="fs-18 mb-0">
                 {{ section.settings.description }}
-              </p>
+              </div>
             {% endif %}
 
           </div>
@@ -43,13 +43,8 @@
         {{ image_html }}
         {{ content_html }}
       {% else %}
-        <div class="order-lg-2 col-lg-6">
-          {{ image_html }}
-        </div>
-
-        <div class="order-lg-1 col-lg-6">
-          {{ content_html }}
-        </div>
+        {{ content_html }}
+        {{ image_html }}
       {% endif %}
     </div>
   </div>
