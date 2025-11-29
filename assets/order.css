@@ -53,5 +53,6 @@
   margin-bottom: 16px;
 }
 .order-sec .order-card .card-inner:last-child {
+  border-bottom: none;
   margin-bottom: 0;
 }/*# sourceMappingURL=order.css.map */
