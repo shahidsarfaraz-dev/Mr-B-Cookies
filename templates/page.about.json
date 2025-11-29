@@ -35,11 +35,81 @@
         "title": "Mr. B’s Cookies started from a simple belief",
         "description": "<p>The best moments in life are shared over something warm, soft, and fresh from the oven. What began as a weekend hobby soon became a full-blown passion — and now, a way to bring a little extra comfort to homes across Calgary.<br/>Every cookie we bake starts with careful attention: browned butter for deep flavor, premium milk chocolate for the perfect melt, and a sprinkle of flaky sea salt to finish. Thick, soft, and crafted by hand — each cookie is a small reminder to slow down and enjoy the good things.<br/><strong>Because to us, cookies are more than dessert.  They’re love. They’re comfort. They’re home.</strong>Thank you for supporting a local Calgary home bakery. We can’t wait to share our fresh cookies with you — one warm bite at a time.<br/><strong>— With love, Mr. B 🍪</strong></p>"
       }
+    },
+    "testimonial_slider_sec_9n9DNP": {
+      "type": "testimonial-slider-sec",
+      "blocks": {
+        "testimonial_block_JzJY4g": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me."
+          }
+        },
+        "testimonial_block_YQwxpc": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_mW4kDT": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_6MpjPN": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        },
+        "testimonial_block_EfjzjK": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_block_JzJY4g",
+        "testimonial_block_YQwxpc",
+        "testimonial_block_mW4kDT",
+        "testimonial_block_6MpjPN",
+        "testimonial_block_EfjzjK"
+      ],
+      "name": "Testimonials Section",
+      "settings": {
+        "heading": "What People Say!",
+        "platform_logo": "shopify://shop_images/google.webp",
+        "rating_score": "4.9",
+        "total_reviews": 830
+      }
     }
   },
   "order": [
     "main",
     "about_banner_VFkA7P",
-    "who_we_are_kcURyg"
+    "who_we_are_kcURyg",
+    "testimonial_slider_sec_9n9DNP"
   ]
 }
