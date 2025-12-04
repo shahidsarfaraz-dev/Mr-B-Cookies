@@ -360,6 +360,7 @@ section {
     border: 1px solid var(--border);
     overflow: hidden;
     transition: .4s;
+    background-color: var(--gray);
     &:hover {
         background-color: var(--primary);
         h2,

@@ -302,6 +302,7 @@ section {
   border: 1px solid var(--border);
   overflow: hidden;
   transition: 0.4s;
+  background-color: var(--gray);
 }
 .card:hover {
   background-color: var(--primary);
