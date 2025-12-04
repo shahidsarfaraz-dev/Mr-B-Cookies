@@ -301,6 +301,30 @@ section {
   border-radius: 28px;
   border: 1px solid var(--border);
   overflow: hidden;
+  transition: 0.4s;
+}
+.card:hover {
+  background-color: var(--primary);
+}
+.card:hover h2,
+.card:hover p,
+.card:hover .btn {
+  transition: 0.4s;
+  color: white;
+}
+.card:hover h2 img,
+.card:hover p img,
+.card:hover .btn img {
+  filter: invert(1);
+}
+.card:hover .btn-1 {
+  background-color: black;
+}
+.card:hover .btn-2 {
+  border-color: white;
+}
+.card .btn:hover {
+  transform: scale(1.1);
 }
 .card .content-wrapper {
   padding: clamp(24px, 4vw, 40px);

@@ -359,6 +359,30 @@ section {
     border-radius: 28px;
     border: 1px solid var(--border);
     overflow: hidden;
+    transition: .4s;
+    &:hover {
+        background-color: var(--primary);
+        h2,
+        p,
+        .btn {
+            transition: .4s;
+            color: white;
+            img {
+                filter: invert(1);
+            }
+        }
+        .btn-1 {
+            background-color: black;
+        }
+        .btn-2 {
+            border-color: white;
+        }
+    }
+    .btn {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 
     .content-wrapper {
         padding: clamp(24px, 4vw, 40px);

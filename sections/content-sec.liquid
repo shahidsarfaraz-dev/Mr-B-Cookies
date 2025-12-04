@@ -11,7 +11,6 @@
       <div
         class="
           card
-          {% if is_primary == 'primary' %} bg-primary border-0 {% else %} bg-gray {% endif %}
           mb-5
         "
       >
@@ -48,11 +47,11 @@
             "
           >
             <div class="content-wrapper">
-              <h2 class="{% if is_primary == 'primary' %} text-white {% endif %}">
+              <h2>
                 {{ block.settings.title }}
               </h2>
 
-              <p class="{% if is_primary == 'primary' %} text-white {% endif %} mb-5">
+              <p class="mb-5">
                 {{ block.settings.description }}
               </p>
 
@@ -62,8 +61,7 @@
                     href="{{ block.settings.btn1_url }}"
                     class="
                       btn
-                      {% if is_primary == 'primary' %} btn-dark
-                      {% else %} p-0 {% endif %}
+                      btn-1
                     "
                   >
                     {{ block.settings.btn1_label }}
@@ -76,8 +74,7 @@
                     href="{{ block.settings.btn2_url }}"
                     class="
                       btn
-                      {% if is_primary == 'primary' %} btn-outline-light
-                      {% else %} p-0 {% endif %}
+                      btn-2
                     "
                   >
                     {{ block.settings.btn2_label }}
