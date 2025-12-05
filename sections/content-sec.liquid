@@ -47,9 +47,9 @@
             "
           >
             <div class="content-wrapper">
-              <h2>
+              <h3 class="h2">
                 {{ block.settings.title }}
-              </h2>
+              </h3>
 
               <p class="mb-5">
                 {{ block.settings.description }}
@@ -122,6 +122,16 @@
           "id": "description",
           "label": "Card Description",
           "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        },
+        {
+          "type": "select",
+          "id": "card_style",
+          "label": "Card Style",
+          "options": [
+            { "value": "gray", "label": "Gray (Default)" },
+            { "value": "primary", "label": "Primary (Blue Background)" }
+          ],
+          "default": "gray"
         },
         {
           "type": "select",
