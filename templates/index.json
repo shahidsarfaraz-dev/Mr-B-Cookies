@@ -18,7 +18,7 @@
         "heading": "It’s Not Just Cookies — It’s Comfort",
         "text": "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500s.",
         "button_label": "Order Now",
-        "button_link": ""
+        "button_link": "shopify://pages/pre-order"
       }
     },
     "content_sec_yaQdjx": {
@@ -33,9 +33,9 @@
             "card_style": "gray",
             "image_position": "left",
             "btn1_label": "Order Now",
-            "btn1_url": "",
+            "btn1_url": "shopify://products/milk-chocolate-sea-salt",
             "btn2_label": "Learn More",
-            "btn2_url": ""
+            "btn2_url": "shopify://products/milk-chocolate-sea-salt"
           }
         },
         "card_ek9tQc": {
@@ -47,9 +47,9 @@
             "card_style": "primary",
             "image_position": "right",
             "btn1_label": "Order Now",
-            "btn1_url": "",
+            "btn1_url": "shopify://products/white-chocolate-macadamia-nut",
             "btn2_label": "Learn More",
-            "btn2_url": ""
+            "btn2_url": "shopify://products/white-chocolate-macadamia-nut"
           }
         },
         "card_jjgkXy": {
@@ -61,9 +61,9 @@
             "card_style": "gray",
             "image_position": "left",
             "btn1_label": "Order Now",
-            "btn1_url": "",
+            "btn1_url": "shopify://products/oatmeal-raisin",
             "btn2_label": "Learn More",
-            "btn2_url": ""
+            "btn2_url": "shopify://products/oatmeal-raisin"
           }
         },
         "card_X8JVMt": {
@@ -75,9 +75,9 @@
             "card_style": "gray",
             "image_position": "right",
             "btn1_label": "Order Now",
-            "btn1_url": "",
+            "btn1_url": "shopify://products/classic-peanut-butter",
             "btn2_label": "Learn More",
-            "btn2_url": ""
+            "btn2_url": "shopify://products/classic-peanut-butter"
           }
         },
         "card_if3K4R": {
@@ -89,9 +89,9 @@
             "card_style": "gray",
             "image_position": "left",
             "btn1_label": "Order Now",
-            "btn1_url": "",
+            "btn1_url": "shopify://products/double-chocolate",
             "btn2_label": "Learn More",
-            "btn2_url": ""
+            "btn2_url": "shopify://products/double-chocolate"
           }
         },
         "card_yBBAdD": {
@@ -103,9 +103,9 @@
             "card_style": "gray",
             "image_position": "right",
             "btn1_label": "Order Now",
-            "btn1_url": "",
+            "btn1_url": "shopify://products/the-morning-roast",
             "btn2_label": "Learn More",
-            "btn2_url": ""
+            "btn2_url": "shopify://products/the-morning-roast"
           }
         }
       },
