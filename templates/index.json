@@ -164,13 +164,24 @@
             "time_ago": "06-feb-2025",
             "testimonial_text": "Delicious, melt-in-your-mouth cookies! The owner was quick to respond and made the whole process incredibly easy, even offering delivery by mail. The packaging is absolutely adorable and I was blown away by how fresh the cookies tasted when they got here. Whether you’re treating a friend, your coworkers, or yourself, Mr. B’s is a must try."
           }
+        },
+        "testimonial_block_tKnRyV": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Remi W",
+            "customer_rating": "5",
+            "time_ago": "20-jun-2025",
+            "testimonial_text": "Mr B's cookies are simply the best, The Chocolate Chip & Sea Salt is to die for"
+          }
         }
       },
       "block_order": [
         "testimonial_block_36RUri",
         "testimonial_block_WMadzA",
         "testimonial_block_jgY7EW",
-        "testimonial_block_8gtD33"
+        "testimonial_block_8gtD33",
+        "testimonial_block_tKnRyV"
       ],
       "name": "Testimonials Section",
       "settings": {
