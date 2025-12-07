@@ -129,59 +129,15 @@
           "type": "testimonial_block",
           "settings": {
             "customer_image": "shopify://shop_images/dummy-user.webp",
-            "customer_name": "John D.",
+            "customer_name": "Usman M",
             "customer_rating": "5",
-            "time_ago": "4 days ago",
-            "testimonial_text": "This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me."
-          }
-        },
-        "testimonial_block_mtdyfe": {
-          "type": "testimonial_block",
-          "settings": {
-            "customer_image": "shopify://shop_images/dummy-user.webp",
-            "customer_name": "John D.",
-            "customer_rating": "5",
-            "time_ago": "4 days ago",
-            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
-          }
-        },
-        "testimonial_block_6Xzr88": {
-          "type": "testimonial_block",
-          "settings": {
-            "customer_image": "shopify://shop_images/dummy-user.webp",
-            "customer_name": "John D.",
-            "customer_rating": "5",
-            "time_ago": "4 days ago",
-            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
-          }
-        },
-        "testimonial_block_H3xntd": {
-          "type": "testimonial_block",
-          "settings": {
-            "customer_image": "shopify://shop_images/dummy-user.webp",
-            "customer_name": "John D.",
-            "customer_rating": "5",
-            "time_ago": "4 days ago",
-            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
-          }
-        },
-        "testimonial_block_LyArJh": {
-          "type": "testimonial_block",
-          "settings": {
-            "customer_image": "shopify://shop_images/dummy-user.webp",
-            "customer_name": "John D.",
-            "customer_rating": "5",
-            "time_ago": "4 days ago",
-            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+            "time_ago": "04-jan-2025",
+            "testimonial_text": "Real review- mr.b’s cookies have been consistent from every single cookie and every batch. A lot of care and effort is conveyed in every bite you take. I can't recommend them enough."
           }
         }
       },
       "block_order": [
-        "testimonial_block_36RUri",
-        "testimonial_block_mtdyfe",
-        "testimonial_block_6Xzr88",
-        "testimonial_block_H3xntd",
-        "testimonial_block_LyArJh"
+        "testimonial_block_36RUri"
       ],
       "name": "Testimonials Section",
       "settings": {
