@@ -144,11 +144,33 @@
             "time_ago": "04-jan-2025",
             "testimonial_text": "Mr. B's cookies are simply the best, local handcrafted goodness in every cookie… I might even go so far as to say they are dangerous… for your diet! No but seriously these are some damn good cookies."
           }
+        },
+        "testimonial_block_jgY7EW": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Rebecca B",
+            "customer_rating": "5",
+            "time_ago": "06-feb-2025",
+            "testimonial_text": "You’ve got to try Mr.B’s! These cookies are melt-in-your-mouth amazing. Ordering was super simple and communication throughout the process was smooth. Mail delivery made everything incredibly convenient. The packaging is adorable and the cookies arrived tasting unbelievably fresh. Perfect for gifting to a friend or treating yourself!"
+          }
+        },
+        "testimonial_block_8gtD33": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Deng",
+            "customer_rating": "5",
+            "time_ago": "06-feb-2025",
+            "testimonial_text": "Delicious, melt-in-your-mouth cookies! The owner was quick to respond and made the whole process incredibly easy, even offering delivery by mail. The packaging is absolutely adorable and I was blown away by how fresh the cookies tasted when they got here. Whether you’re treating a friend, your coworkers, or yourself, Mr. B’s is a must try."
+          }
         }
       },
       "block_order": [
         "testimonial_block_36RUri",
-        "testimonial_block_WMadzA"
+        "testimonial_block_WMadzA",
+        "testimonial_block_jgY7EW",
+        "testimonial_block_8gtD33"
       ],
       "name": "Testimonials Section",
       "settings": {
