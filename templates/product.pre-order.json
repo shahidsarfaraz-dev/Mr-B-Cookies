@@ -95,66 +95,99 @@
         "description": "<p>The best moments in life are shared over something warm, soft, and fresh from the oven. What began as a weekend hobby soon became a full-blown passion — and now, a way to bring a little extra comfort.</p>"
       }
     },
-    "testimonial_slider_sec_fnte9b": {
+    "testimonial_slider_sec_HEXVnX": {
       "type": "testimonial-slider-sec",
       "blocks": {
-        "testimonial_block_7BDGmi": {
+        "testimonial_block_9LBm6d": {
           "type": "testimonial_block",
           "settings": {
-            "customer_image": "shopify://shop_images/dummy-user.webp",
-            "customer_name": "John D.",
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Usman M",
             "customer_rating": "5",
-            "time_ago": "4 days ago",
-            "testimonial_text": "This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me."
+            "time_ago": "04-jan-2025",
+            "testimonial_text": "Real review- mr.b’s cookies have been consistent from every single cookie and every batch. A lot of care and effort is conveyed in every bite you take. I can't recommend them enough."
           }
         },
-        "testimonial_block_w3aYqR": {
+        "testimonial_block_YDYDNc": {
           "type": "testimonial_block",
           "settings": {
-            "customer_image": "shopify://shop_images/dummy-user.webp",
-            "customer_name": "John D.",
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Dylan R",
             "customer_rating": "5",
-            "time_ago": "4 days ago",
-            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+            "time_ago": "04-jan-2025",
+            "testimonial_text": "Mr. B's cookies are simply the best, local handcrafted goodness in every cookie… I might even go so far as to say they are dangerous… for your diet! No but seriously these are some damn good cookies."
           }
         },
-        "testimonial_block_C6Parw": {
+        "testimonial_block_EafHXX": {
           "type": "testimonial_block",
           "settings": {
-            "customer_image": "shopify://shop_images/dummy-user.webp",
-            "customer_name": "John D.",
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Rebecca B",
             "customer_rating": "5",
-            "time_ago": "4 days ago",
-            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+            "time_ago": "10-feb-2025",
+            "testimonial_text": "You’ve got to try Mr.B’s! These cookies are melt-in-your-mouth amazing. Ordering was super simple and communication throughout the process was smooth. Mail delivery made everything incredibly convenient. The packaging is adorable and the cookies arrived tasting unbelievably fresh. Perfect for gifting to a friend or treating yourself!"
           }
         },
-        "testimonial_block_APtzLk": {
+        "testimonial_block_FFRztt": {
           "type": "testimonial_block",
           "settings": {
-            "customer_image": "shopify://shop_images/dummy-user.webp",
-            "customer_name": "John D.",
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Deng",
             "customer_rating": "5",
-            "time_ago": "4 days ago",
-            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+            "time_ago": "06-feb-2025",
+            "testimonial_text": "Delicious, melt-in-your-mouth cookies! The owner was quick to respond and made the whole process incredibly easy, even offering delivery by mail. The packaging is absolutely adorable and I was blown away by how fresh the cookies tasted when they got here. Whether you’re treating a friend, your coworkers, or yourself, Mr. B’s is a must try."
           }
         },
-        "testimonial_block_RLBQNq": {
+        "testimonial_block_6yz7TL": {
           "type": "testimonial_block",
           "settings": {
-            "customer_image": "shopify://shop_images/dummy-user.webp",
-            "customer_name": "John D.",
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Remi W",
             "customer_rating": "5",
-            "time_ago": "4 days ago",
-            "testimonial_text": "THE ABSOLUTE BEST COOKIE IVE HAD AT CRUMBL! Need it back asap! The way the flavor melts and the whipped icing ! A favorite in my family for sure. Crumbl… do your thing"
+            "time_ago": "20-jun-2025",
+            "testimonial_text": "Mr B's cookies are simply the best, The Chocolate Chip & Sea Salt is to die for"
+          }
+        },
+        "testimonial_block_48Yb8z": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Asia",
+            "customer_rating": "5",
+            "time_ago": "27-jul-2025",
+            "testimonial_text": "The Perfect Treat for anytime of day, it’s really hard to have just one! Normal cookies will never be the same again"
+          }
+        },
+        "testimonial_block_JCdmXb": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Michael T",
+            "customer_rating": "5",
+            "time_ago": "21-aug-2025",
+            "testimonial_text": "I’ve ordered from Mr. B’s Cookies multiple times now, and every experience has been outstanding. The delivery time was quick, the packaging is clean and well put-together, and the cookies themselves are some of the best I’ve had.\nYou can tell a lot of care goes into both the cookies and the customer service. They arrived fresh and paired well with a glass of milk. \nHighly recommend."
+          }
+        },
+        "testimonial_block_yXWk84": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Scott B",
+            "customer_rating": "5",
+            "time_ago": "29-sep-2025",
+            "testimonial_text": "I was gifted Mr. B’s cookies and took them to a Thanksgiving dinner. I had no idea what to expect. We tried them thinking they would just be a standard cookie, but after one bite, we were all shocked at how insanely good these were. The double chocolate is incredible with a hint of sea salt. These cookies are on another level. You can tell the quality from the moment you taste them. Take these to your next party or gathering and people will be wowed!!"
           }
         }
       },
       "block_order": [
-        "testimonial_block_7BDGmi",
-        "testimonial_block_w3aYqR",
-        "testimonial_block_C6Parw",
-        "testimonial_block_APtzLk",
-        "testimonial_block_RLBQNq"
+        "testimonial_block_9LBm6d",
+        "testimonial_block_YDYDNc",
+        "testimonial_block_EafHXX",
+        "testimonial_block_FFRztt",
+        "testimonial_block_6yz7TL",
+        "testimonial_block_48Yb8z",
+        "testimonial_block_JCdmXb",
+        "testimonial_block_yXWk84"
       ],
       "name": "Testimonials Section",
       "settings": {
@@ -244,7 +277,7 @@
     "preorder_hero_3GFEyM",
     "main",
     "half_sec_yn9GxU",
-    "testimonial_slider_sec_fnte9b",
+    "testimonial_slider_sec_HEXVnX",
     "faq_sec_9eiDH3",
     "related-products"
   ]
