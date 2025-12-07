@@ -29,7 +29,7 @@
           "settings": {
             "card_image": "shopify://shop_images/Milk_Chocolate_Sea_Salt-1.webp",
             "title": "Milk Chocolate Sea Salt",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "description": "Made with browned butter, premium milk chocolate, and a touch of flaky sea salt for the perfect sweet–salty bite. Thick, soft-baked, and irresistibly rich — this is comfort, perfected.",
             "card_style": "gray",
             "image_position": "left",
             "btn1_label": "Order Now",
@@ -43,7 +43,7 @@
           "settings": {
             "card_image": "shopify://shop_images/White_Chocolate_Macadmia_Nut_2.webp",
             "title": "White Chocolate Macadamia Nut",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+            "description": "Crisp edges and a buttery centre loaded with toasted macadamia nuts and smooth white chocolate. Sweet, nutty, and golden — a timeless favourite that never goes out of style.",
             "card_style": "primary",
             "image_position": "right",
             "btn1_label": "Order Now",
@@ -57,7 +57,7 @@
           "settings": {
             "card_image": "shopify://shop_images/ooatmeal.webp",
             "title": "Oatmeal Raisin",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+            "description": "Chewy oats, plump vanilla-soaked raisins, and a hint of cinnamon baked into browned-butter dough. Soft, warm, and deeply nostalgic — proof that classics never fade.",
             "card_style": "gray",
             "image_position": "left",
             "btn1_label": "Order Now",
@@ -71,7 +71,7 @@
           "settings": {
             "card_image": "shopify://shop_images/peanut-butter.webp",
             "title": "Classic Peanut Butter",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+            "description": "Made with natural peanut butter and browned butter for a deep, roasted flavour that melts into every bite. Soft, chewy, and finished with a fork-pressed top — just like home, but better.",
             "card_style": "gray",
             "image_position": "right",
             "btn1_label": "Order Now",
@@ -85,7 +85,7 @@
           "settings": {
             "card_image": "shopify://shop_images/d-chocolate.webp",
             "title": "Double Chocolate",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "description": "Our rich cocoa dough is folded with premium dark and milk chocolate for a molten, brownie-like bite. Intense, fudgy, and unapologetically indulgent — chocolate lovers, this one’s for you.",
             "card_style": "gray",
             "image_position": "left",
             "btn1_label": "Order Now",
@@ -99,7 +99,7 @@
           "settings": {
             "card_image": "shopify://shop_images/m-roast.webp",
             "title": "The Morning Roast",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "description": "A browned-butter espresso cookie infused with real coffee and folded with premium dark and white chocolate. The perfect balance of bold and smooth — rich espresso depth meets creamy sweetness. For coffee lovers who believe cookies belong any time of day.",
             "card_style": "gray",
             "image_position": "right",
             "btn1_label": "Order Now",
