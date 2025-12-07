@@ -128,16 +128,27 @@
         "testimonial_block_36RUri": {
           "type": "testimonial_block",
           "settings": {
-            "customer_image": "shopify://shop_images/dummy-user.webp",
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
             "customer_name": "Usman M",
             "customer_rating": "5",
             "time_ago": "04-jan-2025",
             "testimonial_text": "Real review- mr.b’s cookies have been consistent from every single cookie and every batch. A lot of care and effort is conveyed in every bite you take. I can't recommend them enough."
           }
+        },
+        "testimonial_block_WMadzA": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Dylan R",
+            "customer_rating": "5",
+            "time_ago": "04-jan-2025",
+            "testimonial_text": "Mr. B's cookies are simply the best, local handcrafted goodness in every cookie… I might even go so far as to say they are dangerous… for your diet! No but seriously these are some damn good cookies."
+          }
         }
       },
       "block_order": [
-        "testimonial_block_36RUri"
+        "testimonial_block_36RUri",
+        "testimonial_block_WMadzA"
       ],
       "name": "Testimonials Section",
       "settings": {
