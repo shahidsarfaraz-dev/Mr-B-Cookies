@@ -356,7 +356,7 @@ section {
 
 .product-media-container {
   border-radius: 16px;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 @media (min-width: 1400px) {
