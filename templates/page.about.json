@@ -88,6 +88,15 @@
             "time_ago": "20-jun-2025",
             "testimonial_text": "Mr B's cookies are simply the best, The Chocolate Chip & Sea Salt is to die for"
           }
+        },
+        "testimonial_block_WUMzne": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_name": "Asha",
+            "customer_rating": "5",
+            "time_ago": "27-jul-2025",
+            "testimonial_text": "The Perfect Treat for anytime of day, it’s really hard to have just one! Normal cookies will never be the same agai"
+          }
         }
       },
       "block_order": [
@@ -95,7 +104,8 @@
         "testimonial_block_YQwxpc",
         "testimonial_block_mW4kDT",
         "testimonial_block_6MpjPN",
-        "testimonial_block_EfjzjK"
+        "testimonial_block_EfjzjK",
+        "testimonial_block_WUMzne"
       ],
       "name": "Testimonials Section",
       "settings": {
