@@ -97,6 +97,46 @@
             "time_ago": "27-jul-2025",
             "testimonial_text": "The Perfect Treat for anytime of day, it’s really hard to have just one! Normal cookies will never be the same agai"
           }
+        },
+        "testimonial_block_JMVgbF": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Michael T",
+            "customer_rating": "5",
+            "time_ago": "21-aug-2025",
+            "testimonial_text": "I’ve ordered from Mr. B’s Cookies multiple times now, and every experience has been outstanding. The delivery time was quick, the packaging is clean and well put-together, and the cookies themselves are some of the best I’ve had.\nYou can tell a lot of care goes into both the cookies and the customer service. They arrived fresh and paired well with a glass of milk. \nHighly recommend."
+          }
+        },
+        "testimonial_block_RAWnBp": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "Scott B",
+            "customer_rating": "5",
+            "time_ago": "29-sep-2025",
+            "testimonial_text": "I was gifted Mr. B’s cookies and took them to a Thanksgiving dinner. I had no idea what to expect. We tried them thinking they would just be a standard cookie, but after one bite, we were all shocked at how insanely good these were. The double chocolate is incredible with a hint of sea salt. These cookies are on another level. You can tell the quality from the moment you taste them. Take these to your next party or gathering and people will be wowed!!"
+          }
+        },
+        "testimonial_block_Ty49hm": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "This cookie was amazing! One of my favorites!"
+          }
+        },
+        "testimonial_block_pHHtA3": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_image": "shopify://shop_images/user-placeholder.webp",
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "This cookie was amazing! One of my favorites!"
+          }
         }
       },
       "block_order": [
@@ -105,7 +145,11 @@
         "testimonial_block_mW4kDT",
         "testimonial_block_6MpjPN",
         "testimonial_block_EfjzjK",
-        "testimonial_block_WUMzne"
+        "testimonial_block_WUMzne",
+        "testimonial_block_JMVgbF",
+        "testimonial_block_RAWnBp",
+        "testimonial_block_Ty49hm",
+        "testimonial_block_pHHtA3"
       ],
       "name": "Testimonials Section",
       "settings": {
