@@ -240,7 +240,7 @@
           "settings": {
             "icon": "shopify://shop_images/order.webp",
             "title": "Ordering Questions",
-            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+            "content": "<p><strong>How does ordering work?</strong></p><p>Orders are placed through our website only. Each week has a limited number of boxes available to ensure quality and freshness. </p><p><strong>Is there an order cutoff?</strong></p><p>Yes. Orders close <strong>Tuesday at midnight </strong>for that weeks bake. Any orders placed after cutoff will roll into the following week. </p><p><strong>Can I change or cancel my order? </strong></p><p>Changes or cancellations must be requested <strong>before the order cutoff. </strong>Once baking begins, all sales are final. </p><p><strong>Do you accept custom orders? </strong></p><p>At this time, we focus on our core and seasonal flavours to maintain consistency and quality. </p><p></p>"
           }
         },
         "faq_item_LpVgFD": {
@@ -248,7 +248,7 @@
           "settings": {
             "icon": "shopify://shop_images/gift.webp",
             "title": "Gifting Questions",
-            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+            "content": "<p><strong>Can I send cookies as a gift?</strong></p><p>Yes! Our cookies make great gifts. You can enter the recipients details at checkout. </p><p><strong>Do you include gift notes?</strong></p><p>Not yet - but gift-ready packaging is always included. Handwritten notes may be added in future releases. </p><p><strong>Do prices include receipts in the box?</strong></p><p>No. Receipts are sent digitally only. </p>"
           }
         },
         "faq_item_FxbTAb": {
@@ -256,7 +256,7 @@
           "settings": {
             "icon": "shopify://shop_images/order.webp",
             "title": "Delivery & Shipping",
-            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+            "content": "<p><strong>Do you deliver locally?</strong></p><p>Yes. Local delivery is available in Calgary through our delivery partner. Delivery windows are listed at checkout. </p><p><strong>Do you ship across Canada?</strong></p><p>Yes - Canada-wide shipping is available on select products. Shipping rates are calculated at checkout. </p><p><strong>How are cookies packaged for shipping? </strong></p><p>Cookies are carefully packed and sealed to maintain freshness during transit. However, once shipped, we cannot guarantee condition due to carrier handling. </p><p><strong>Are shipping orders refundable?</strong></p><p>Due to the perishable nature or baked goods, shipped orders are final sale. </p>"
           }
         },
         "faq_item_eUheJn": {
@@ -264,7 +264,7 @@
           "settings": {
             "icon": "shopify://shop_images/pickup.webp",
             "title": "Pick Up",
-            "content": "<p>This one is amongst my top 3 cookies! I absolutely love everything about it from the very chewy, almost fudgey like base to the delicious mousse that it’s field with. This cookie is absolutely amazing and hits all the notes for me.</p>"
+            "content": "<p><strong>Where is pickup located? </strong></p><p>Pickup is available in <strong>Calgary, AB. </strong>Exact pickup details are provided after checkout. </p><p><strong>What are pickup times? </strong></p><p>Pickup windows are typically <strong>Saturday from 10 AM - 2 PM </strong>unless otherwise stated. </p><p><strong>What if I miss my pickup?</strong></p><p>If a pickup is missed and we are not contacted, the order may be forfeited without refund. </p>"
           }
         }
       },
