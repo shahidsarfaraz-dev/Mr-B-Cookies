@@ -46,7 +46,7 @@
             "customer_name": "Usman M",
             "customer_rating": "5",
             "time_ago": "04-jan-2025",
-            "testimonial_text": "Real review- mr.b’s cookies have been consistent from every single cookie and every batch. A lot of care and effort is conveyed in every bite you take. I can't recommend them enough."
+            "testimonial_text": "Mr.B’s cookies have been consistent from every single cookie and every batch. A lot of care and effort is conveyed in every bite you take. I can't recommend them enough."
           }
         },
         "testimonial_block_YQwxpc": {
@@ -73,7 +73,7 @@
           "type": "testimonial_block",
           "settings": {
             "customer_image": "shopify://shop_images/user-placeholder.webp",
-            "customer_name": "Deng",
+            "customer_name": "Deng D",
             "customer_rating": "5",
             "time_ago": "06-feb-2025",
             "testimonial_text": "Delicious, melt-in-your-mouth cookies! The owner was quick to respond and made the whole process incredibly easy, even offering delivery by mail. The packaging is absolutely adorable and I was blown away by how fresh the cookies tasted when they got here. Whether you’re treating a friend, your coworkers, or yourself, Mr. B’s is a must try."
@@ -96,6 +96,24 @@
             "customer_rating": "5",
             "time_ago": "27-jul-2025",
             "testimonial_text": "The Perfect Treat for anytime of day, it’s really hard to have just one! Normal cookies will never be the same agai"
+          }
+        },
+        "testimonial_block_LnXFeg": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "This cookie was amazing! One of my favorites!"
+          }
+        },
+        "testimonial_block_ahr8Kf": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "This cookie was amazing! One of my favorites!"
           }
         },
         "testimonial_block_JMVgbF": {
@@ -126,6 +144,8 @@
         "testimonial_block_6MpjPN",
         "testimonial_block_EfjzjK",
         "testimonial_block_WUMzne",
+        "testimonial_block_LnXFeg",
+        "testimonial_block_ahr8Kf",
         "testimonial_block_JMVgbF",
         "testimonial_block_RAWnBp"
       ],
