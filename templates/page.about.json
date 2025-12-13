@@ -79,6 +79,15 @@
             "testimonial_text": "Delicious, melt-in-your-mouth cookies! The owner was quick to respond and made the whole process incredibly easy, even offering delivery by mail. The packaging is absolutely adorable and I was blown away by how fresh the cookies tasted when they got here. Whether you’re treating a friend, your coworkers, or yourself, Mr. B’s is a must try."
           }
         },
+        "testimonial_block_ma6Dtd": {
+          "type": "testimonial_block",
+          "settings": {
+            "customer_name": "John D.",
+            "customer_rating": "5",
+            "time_ago": "4 days ago",
+            "testimonial_text": "This cookie was amazing! One of my favorites!"
+          }
+        },
         "testimonial_block_EfjzjK": {
           "type": "testimonial_block",
           "settings": {
@@ -92,7 +101,7 @@
         "testimonial_block_WUMzne": {
           "type": "testimonial_block",
           "settings": {
-            "customer_name": "Asha",
+            "customer_name": "Asia",
             "customer_rating": "5",
             "time_ago": "27-jul-2025",
             "testimonial_text": "The Perfect Treat for anytime of day, it’s really hard to have just one! Normal cookies will never be the same agai"
@@ -142,6 +151,7 @@
         "testimonial_block_YQwxpc",
         "testimonial_block_mW4kDT",
         "testimonial_block_6MpjPN",
+        "testimonial_block_ma6Dtd",
         "testimonial_block_EfjzjK",
         "testimonial_block_WUMzne",
         "testimonial_block_LnXFeg",
