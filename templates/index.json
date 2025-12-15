@@ -14,9 +14,9 @@
       "name": "Hero Banner",
       "settings": {
         "bg_image": "shopify://shop_images/HeroCookies.webp",
-        "subheading": "Pre-Order This Week’s Batch",
+        "subheading": "",
         "heading": "It’s Not Just Cookies — It’s Comfort",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500s.",
+        "text": "",
         "button_label": "Order Now",
         "button_link": "shopify://pages/pre-order"
       }
