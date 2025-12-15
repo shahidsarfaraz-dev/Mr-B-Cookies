@@ -1,10 +1,10 @@
 :root {
-    --primary: #A17339;
-    --gray: #F7F2EA;
-    --gray-light: #F4EEE6;
-    --pink: #F5BBB0;
-    --border: #E9E1D4;
-    --dark: #2B2B2B;
+    --primary: #a17339;
+    --gray: #f7f2ea;
+    --gray-light: #f4eee6;
+    --pink: #f5bbb0;
+    --border: #e9e1d4;
+    --dark: #2b2b2b;
     --section-padding: clamp(40px, 8vw, 100px) 0;
 }
 
@@ -59,74 +59,74 @@ ul {
 
 // Fonts
 @font-face {
-    font-family: 'atop';
+    font-family: "atop";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('./Atop.ttf');
+    src: url("./Atop.ttf");
 }
 
 @font-face {
-    font-family: 'inter-reg';
+    font-family: "inter-reg";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('./Inter-Regular.ttf');
+    src: url("./Inter-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'inter-md';
+    font-family: "inter-md";
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url('./Inter-Medium.ttf');
+    src: url("./Inter-Medium.ttf");
 }
 
 @font-face {
-    font-family: 'inter-semibold';
+    font-family: "inter-semibold";
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url('./Inter-SemiBold.ttf');
+    src: url("./Inter-SemiBold.ttf");
 }
 
 @font-face {
-    font-family: 'inter-bold';
+    font-family: "inter-bold";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('./Inter-Bold.ttf');
+    src: url("./Inter-Bold.ttf");
 }
 
 .atop {
-    font-family: 'atop', sans-serif;
+    font-family: "atop", sans-serif;
     font-weight: 700;
 }
 
 .inter-reg {
-    font-family: 'inter-reg', sans-serif;
+    font-family: "inter-reg", sans-serif;
     font-weight: 400;
 }
 
 .inter-md {
-    font-family: 'inter-md', sans-serif;
+    font-family: "inter-md", sans-serif;
     font-weight: 500;
 }
 
 .inter-semibold {
-    font-family: 'inter-semibold', sans-serif;
+    font-family: "inter-semibold", sans-serif;
     font-weight: 600;
 }
 
 .inter-bold {
-    font-family: 'inter-bold', sans-serif;
+    font-family: "inter-bold", sans-serif;
     font-weight: 700;
 }
 
 // buttons
 .btn {
     font-size: 18px;
-    font-family: 'inter-semibold', sans-serif;
+    font-family: "inter-semibold", sans-serif;
     padding: 12px 26px;
     display: flex;
     align-items: center;
@@ -137,10 +137,10 @@ ul {
     text-transform: capitalize;
     border: 2px solid transparent;
     border-radius: 40px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
     img {
-        transition: all .3s ease;
+        transition: all 0.3s ease;
     }
 
     &.btn-primary {
@@ -198,7 +198,6 @@ ul {
             transform: translateY(-6px);
             box-shadow: none;
         }
-
     }
 
     &.btn-outline-light {
@@ -220,7 +219,6 @@ ul {
             transform: translateY(-6px);
             box-shadow: none;
         }
-
     }
 }
 
@@ -237,7 +235,7 @@ h5,
 .h5,
 h6,
 .h6 {
-    font-family: 'atop', sans-serif;
+    font-family: "atop", sans-serif;
     margin-bottom: clamp(12px, 2.5vw, 25px);
     text-transform: capitalize;
     color: #000000;
@@ -286,7 +284,6 @@ h3,
     font-weight: 800;
 }
 
-
 // Slider
 .slick-slider {
     .slick-dots {
@@ -304,7 +301,7 @@ h3,
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
-                background: #D9D9D9;
+                background: #d9d9d9;
                 padding: 0;
                 text-indent: -9999px;
             }
@@ -317,11 +314,11 @@ h3,
 }
 
 // Style
-.rounded-40{
+.rounded-40 {
     border-radius: 40px;
 }
 
-.filter-img-white{
+.filter-img-white {
     filter: brightness(0) invert(1);
 }
 
@@ -331,7 +328,7 @@ section {
 
 .sub-title {
     font-size: 24px;
-    font-family: 'inter-semibold';
+    font-family: "inter-semibold";
     display: block;
     margin-bottom: clamp(12px, 4.5vw, 32px);
     text-transform: capitalize;
@@ -359,14 +356,14 @@ section {
     border-radius: 28px;
     border: 1px solid var(--border);
     overflow: hidden;
-    transition: .4s;
+    transition: 0.4s;
     background-color: var(--gray);
     &:hover {
         background-color: var(--primary);
         h3,
         p,
         .btn {
-            transition: .4s;
+            transition: 0.4s;
             color: white;
             img {
                 filter: invert(1);
@@ -419,20 +416,29 @@ section {
     border-radius: 16px;
     overflow: hidden !important;
 }
+
 @media (min-width: 1400px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
         max-width: 1300px;
     }
 }
 
 // Media Query
-@media (max-width:1199px) {
-    .xl-mx-auto{
+@media (max-width: 1199px) {
+    .xl-mx-auto {
         margin: 0 auto;
     }
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
+    .header .list-social {
+        display: flex;
+    }
     #product-slider {
         .slick-arrow {
             width: 44px;
@@ -477,7 +483,7 @@ section {
     }
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
     .btn {
         padding: 8px 20px;
     }
