@@ -35,6 +35,13 @@
           "type": "price",
           "settings": {}
         },
+        "variant_picker_Rd74Nf": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
         "quantity_selector_Qxdm7E": {
           "type": "quantity_selector",
           "settings": {}
@@ -51,6 +58,7 @@
         "title_7tAH9W",
         "description_k3YHEq",
         "price_wKBQXH",
+        "variant_picker_Rd74Nf",
         "quantity_selector_Qxdm7E",
         "buy_buttons_kXBTAQ"
       ],
