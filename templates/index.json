@@ -13,7 +13,7 @@
       "type": "hero-sec",
       "name": "Hero Banner",
       "settings": {
-        "bg_image": "shopify://shop_images/hero_clean.webp",
+        "bg_image": "shopify://shop_images/HeroCookies.webp",
         "subheading": "Pre-Order This Week’s Batch",
         "heading": "It’s Not Just Cookies — It’s Comfort",
         "text": "Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500s.",
