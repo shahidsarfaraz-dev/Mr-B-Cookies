@@ -353,6 +353,10 @@ section {
 .card .card__information .quick-add {
   margin-bottom: 0;
 }
+.card .card__information .price-item.price-item--regular {
+  font-size: 18px;
+  font-weight: 700;
+}
 
 .product-media-container {
   border-radius: 16px;
