@@ -18,6 +18,13 @@
         "hero_text": "<p><strong>Warm, thick, freshly baked Mr.B's Cookies  — delivered or pickup Saturday.</strong></p>"
       }
     },
+    "box_of_six_feHfqg": {
+      "type": "box-of-six",
+      "name": "Box of 6 Builder",
+      "settings": {
+        "product": "box-of-6"
+      }
+    },
     "featured_product_dTPVDP": {
       "type": "featured-product",
       "blocks": {
@@ -159,6 +166,7 @@
   },
   "order": [
     "preorder_hero_8aFpym",
+    "box_of_six_feHfqg",
     "featured_product_dTPVDP",
     "main",
     "schedule_7DdNmt"
