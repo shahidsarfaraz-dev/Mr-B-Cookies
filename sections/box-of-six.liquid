@@ -1,28 +1,3 @@
-{% if section.settings.product != blank %}
-  {% assign product = section.settings.product %}
-{% endif %}
-
-{% if product.id == 9211665187053 %}
-  <section class="box-builder-section">
-    <div class="page-width">
-      <form
-        action="/cart/add"
-        method="post"
-        class="box-builder-form"
-        data-box-builder
-      >
-        <button
-          type="submit"
-          class="button button--primary"
-          disabled
-        >
-          Add Box of 6 to Cart
-        </button>
-      </form>
-    </div>
-  </section>
-{% endif %}
-
 {%- liquid
   assign product = section.settings.product
   if product == null
