@@ -57,7 +57,7 @@
       "name": "Box OF 6 Product",
       "settings": {
         "product": "box-of-6",
-        "color_scheme": "scheme-2befe534-d40e-4c64-923d-f45a5feac2b6",
+        "color_scheme": "scheme-1",
         "secondary_background": false,
         "media_size": "small",
         "constrain_to_viewport": true,
