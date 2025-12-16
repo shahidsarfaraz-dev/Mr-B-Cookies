@@ -13,7 +13,7 @@
       "type": "hero-sec",
       "name": "Hero Banner",
       "settings": {
-        "bg_image": "shopify://shop_images/hero_clean.webp",
+        "bg_image": "shopify://shop_images/hero-clean.png",
         "subheading": "",
         "heading": "It’s Not Just Cookies — It’s Comfort",
         "text": "",
