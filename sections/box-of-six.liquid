@@ -603,12 +603,20 @@
           const errorMsg = form.querySelector('.cookieError');
           const submitBtn = form.querySelector('button[type="submit"]');
 
-          function updateTotal() {
+          // Store previous values for each select
+          qtySelectors.forEach((select) => {
+            select.dataset.prevValue = select.value;
+          });
+
+          function calculateTotal() {
             let total = 0;
             qtySelectors.forEach((select) => {
               total += parseInt(select.value || 0);
             });
+            return total;
+          }
 
+          function updateUI(total) {
             totalDisplay.textContent = total;
 
             if (total === 6) {
@@ -621,10 +629,28 @@
           }
 
           qtySelectors.forEach((select) => {
-            select.addEventListener('change', updateTotal);
+            select.addEventListener('change', function () {
+              const total = calculateTotal();
+
+              if (total > 6) {
+                alert('You can only select 6 cookies total.');
+
+                // Revert to previous value
+                this.value = this.dataset.prevValue;
+
+                updateUI(calculateTotal());
+                return;
+              }
+
+              // Save new valid value
+              this.dataset.prevValue = this.value;
+
+              updateUI(total);
+            });
           });
 
-          updateTotal();
+          // Initial state
+          updateUI(calculateTotal());
         });
       });
     </script>
