@@ -457,40 +457,6 @@
                     </p>
 
                     <p class="cookieError" style="display:none; color:red;">Please select exactly 6 cookies.</p>
-
-                    <script>
-                      document.addEventListener('DOMContentLoaded', function () {
-                        document.querySelectorAll('[data-box-builder]').forEach((form) => {
-                          const qtySelectors = form.querySelectorAll('.cookie-qty');
-                          const totalDisplay = form.querySelector('.cookieTotal');
-                          const errorMsg = form.querySelector('.cookieError');
-                          const submitBtn = form.querySelector('button[type="submit"]');
-
-                          function updateTotal() {
-                            let total = 0;
-                            qtySelectors.forEach((select) => {
-                              total += parseInt(select.value || 0);
-                            });
-
-                            totalDisplay.textContent = total;
-
-                            if (total === 6) {
-                              errorMsg.style.display = 'none';
-                              submitBtn.disabled = false;
-                            } else {
-                              errorMsg.style.display = 'block';
-                              submitBtn.disabled = true;
-                            }
-                          }
-
-                          qtySelectors.forEach((select) => {
-                            select.addEventListener('change', updateTotal);
-                          });
-
-                          updateTotal();
-                        });
-                      });
-                    </script>
                   {% endif %}
                 {%- when 'buy_buttons' -%}
                   <button
@@ -592,6 +558,41 @@
   {% if product.media.size > 0 %}
     <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
+  {% endif %}
+  {% if product.id == 9211665187053 %}
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('[data-box-builder]').forEach((form) => {
+          const qtySelectors = form.querySelectorAll('.cookie-qty');
+          const totalDisplay = form.querySelector('.cookieTotal');
+          const errorMsg = form.querySelector('.cookieError');
+          const submitBtn = form.querySelector('button[type="submit"]');
+
+          function updateTotal() {
+            let total = 0;
+            qtySelectors.forEach((select) => {
+              total += parseInt(select.value || 0);
+            });
+
+            totalDisplay.textContent = total;
+
+            if (total === 6) {
+              errorMsg.style.display = 'none';
+              submitBtn.disabled = false;
+            } else {
+              errorMsg.style.display = 'block';
+              submitBtn.disabled = true;
+            }
+          }
+
+          qtySelectors.forEach((select) => {
+            select.addEventListener('change', updateTotal);
+          });
+
+          updateTotal();
+        });
+      });
+    </script>
   {% endif %}
 </product-info>
 
