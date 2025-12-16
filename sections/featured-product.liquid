@@ -408,6 +408,107 @@
                     block: block,
                     product_form_id: product_form_id
                   %}
+                {% when 'flavors' %}
+                  {% if product.id == 9211665187053 %}
+                    <style>
+                      .custom-box-builder {
+                        margin: 2rem 0;
+                        padding: 1.5rem;
+                        border: 1px solid #e5e5e5;
+                        border-radius: 8px;
+                      }
+
+                      .cookie-row {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 0.75rem;
+                      }
+
+                      .cookie-row label {
+                        font-weight: 500;
+                      }
+
+                      .cookie-row select {
+                        width: 70px;
+                      }
+                    </style>
+
+                    <!-- CUSTOM BOX BUILDER (INSIDE PRODUCT FORM) -->
+                    <div
+                      class="custom-box-builder"
+                      data-box-builder
+                      data-product-id="{{ product.id }}"
+                    >
+                      <p><strong>Build your box:</strong> Select exactly 6 cookies.</p>
+
+                      {% assign flavours = 'Milk Chocolate Sea Salt,Oatmeal Raisin,Morning Roast,White Chocolate Macadamia Nut,Double Chocolate,Peanut Butter'
+                        | split: ','
+                      %}
+
+                      {% for flavour in flavours %}
+                        <div class="cookie-row">
+                          <label>{{ flavour }}</label>
+                          <select
+                            name="properties[{{ flavour | strip }}]"
+                            class="cookie-qty"
+                          >
+                            {% for i in (0..6) %}
+                              <option value="{{ i }}">{{ i }}</option>
+                            {% endfor %}
+                          </select>
+                        </div>
+                      {% endfor %}
+
+                      <p class="cookie-total">
+                        Total selected:
+                        <strong><span class="cookieTotal">0</span>/6</strong>
+                      </p>
+
+                      <p class="cookieError" style="color:red; display:none;">Please select exactly 6 cookies.</p>
+                    </div>
+
+                    <script>
+                      document.addEventListener('DOMContentLoaded', function () {
+                        document.querySelectorAll('[data-box-builder]').forEach((builder) => {
+                          if (builder.dataset.productId !== '9211665187053') return;
+
+                          const qtySelectors = builder.querySelectorAll('.cookie-qty');
+                          const totalDisplay = builder.querySelector('.cookieTotal');
+                          const errorMsg = builder.querySelector('.cookieError');
+
+                          const form = builder.closest('form');
+                          if (!form) return;
+
+                          const addToCartBtn = form.querySelector('button[name="add"]');
+                          if (!addToCartBtn) return;
+
+                          function updateTotal() {
+                            let total = 0;
+                            qtySelectors.forEach((select) => {
+                              total += parseInt(select.value || 0);
+                            });
+
+                            totalDisplay.textContent = total;
+
+                            if (total === 6) {
+                              errorMsg.style.display = 'none';
+                              addToCartBtn.disabled = false;
+                            } else {
+                              errorMsg.style.display = 'block';
+                              addToCartBtn.disabled = true;
+                            }
+                          }
+
+                          qtySelectors.forEach((select) => {
+                            select.addEventListener('change', updateTotal);
+                          });
+
+                          updateTotal();
+                        });
+                      });
+                    </script>
+                  {% endif %}
                 {%- when 'buy_buttons' -%}
                   {%- render 'buy-buttons',
                     block: block,
@@ -457,103 +558,6 @@
                   {%- endif -%}
                 {%- when 'icon-with-text' -%}
                   {% render 'icon-with-text', block: block %}
-                {% when 'flavors' %}
-                  {% if product.id == 9211665187053 %}
-                    <style>
-                      .custom-box-builder {
-                        margin: 2rem 0;
-                        padding: 1.5rem;
-                        border: 1px solid #e5e5e5;
-                        border-radius: 8px;
-                      }
-
-                      .cookie-row {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        margin-bottom: 0.75rem;
-                      }
-
-                      .cookie-row label {
-                        font-weight: 500;
-                      }
-
-                      .cookie-row select {
-                        width: 70px;
-                      }
-                    </style>
-                    <div
-                      class="custom-box-builder"
-                      data-box-builder
-                      data-product-id="{{ product.id }}"
-                    >
-                      <h3>Build Your Box of 6</h3>
-                      <p>Select exactly 6 cookies.</p>
-
-                      {% assign flavours = 'Milk Chocolate Sea Salt,Oatmeal Raisin,Morning Roast,White Chocolate Macadamia Nut,Double Chocolate,Peanut Butter'
-                        | split: ','
-                      %}
-
-                      {% for flavour in flavours %}
-                        <div class="cookie-row">
-                          <label>{{ flavour }}</label>
-                          <select
-                            name="properties[{{ flavour | strip }}]"
-                            class="cookie-qty"
-                          >
-                            {% for i in (0..6) %}
-                              <option value="{{ i }}">{{ i }}</option>
-                            {% endfor %}
-                          </select>
-                        </div>
-                      {% endfor %}
-
-                      <p class="cookie-total">
-                        Total selected:
-                        <strong><span class="cookieTotal">0</span>/6</strong>
-                      </p>
-
-                      <p class="cookieError" style="color:red; display:none;">Please select exactly 6 cookies.</p>
-                    </div>
-                    <script>
-                      document.addEventListener('DOMContentLoaded', function () {
-                        document.querySelectorAll('[data-box-builder]').forEach((builder) => {
-                          const productId = builder.dataset.productId;
-                          if (productId !== '9211665187053') return;
-
-                          const qtySelectors = builder.querySelectorAll('.cookie-qty');
-                          const totalDisplay = builder.querySelector('.cookieTotal');
-                          const errorMsg = builder.querySelector('.cookieError');
-
-                          const form = builder.closest('form');
-                          const addToCartBtn = form.querySelector('button[name="add"]');
-
-                          function updateTotal() {
-                            let total = 0;
-                            qtySelectors.forEach((select) => {
-                              total += parseInt(select.value || 0);
-                            });
-
-                            totalDisplay.textContent = total;
-
-                            if (total === 6) {
-                              errorMsg.style.display = 'none';
-                              addToCartBtn.disabled = false;
-                            } else {
-                              errorMsg.style.display = 'block';
-                              addToCartBtn.disabled = true;
-                            }
-                          }
-
-                          qtySelectors.forEach((select) => {
-                            select.addEventListener('change', updateTotal);
-                          });
-
-                          updateTotal();
-                        });
-                      });
-                    </script>
-                  {% endif %}
               {%- endcase -%}
             {%- endfor -%}
             <a
