@@ -46,6 +46,10 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "flavors_RXU6gy": {
+          "type": "flavors",
+          "settings": {}
+        },
         "buy_buttons_kXBTAQ": {
           "type": "buy_buttons",
           "settings": {
@@ -60,6 +64,7 @@
         "price_wKBQXH",
         "variant_picker_Rd74Nf",
         "quantity_selector_Qxdm7E",
+        "flavors_RXU6gy",
         "buy_buttons_kXBTAQ"
       ],
       "name": "t:sections.featured-product.presets.name",
