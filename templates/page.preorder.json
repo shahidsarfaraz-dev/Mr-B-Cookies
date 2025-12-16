@@ -114,6 +114,7 @@
         "flavors_RXU6gy",
         "buy_buttons_kXBTAQ"
       ],
+      "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "box-of-6",
