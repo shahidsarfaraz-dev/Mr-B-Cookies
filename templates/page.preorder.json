@@ -132,7 +132,7 @@
           "type": "alert_row",
           "settings": {
             "alert_icon": "shopify://shop_images/alert.svg",
-            "alert_text": "We can bake only 25 boxes per week. Order early before we’re sold out!"
+            "alert_text": "We only bake a limited amount of boxes per week. Order early before we’re sold out!"
           }
         }
       },
