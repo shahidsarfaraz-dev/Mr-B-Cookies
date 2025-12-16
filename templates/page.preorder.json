@@ -18,11 +18,62 @@
         "hero_text": "<p><strong>Warm, thick, freshly baked Mr.B's Cookies  — delivered or pickup Saturday.</strong></p>"
       }
     },
-    "box_of_six_feHfqg": {
+    "box_of_six_bzfbBr": {
       "type": "box-of-six",
-      "name": "Box of 6 Builder",
+      "blocks": {
+        "title_a66kXc": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "description_DD7LtX": {
+          "type": "description",
+          "settings": {}
+        },
+        "price_8PUFVj": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_selector_CzHkre": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "flavors_ke3Fn3": {
+          "type": "flavors",
+          "settings": {}
+        },
+        "buy_buttons_JPUYMw": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title_a66kXc",
+        "description_DD7LtX",
+        "price_8PUFVj",
+        "quantity_selector_CzHkre",
+        "flavors_ke3Fn3",
+        "buy_buttons_JPUYMw"
+      ],
+      "name": "Box OF 6 Product",
       "settings": {
-        "product": "box-of-6"
+        "product": "box-of-6",
+        "color_scheme": "scheme-2befe534-d40e-4c64-923d-f45a5feac2b6",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_product_dTPVDP": {
@@ -166,7 +217,7 @@
   },
   "order": [
     "preorder_hero_8aFpym",
-    "box_of_six_feHfqg",
+    "box_of_six_bzfbBr",
     "featured_product_dTPVDP",
     "main",
     "schedule_7DdNmt"
