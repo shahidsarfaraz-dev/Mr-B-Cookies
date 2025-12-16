@@ -44,6 +44,7 @@
         },
         "quantity_selector_Qxdm7E": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {}
         },
         "flavors_RXU6gy": {
