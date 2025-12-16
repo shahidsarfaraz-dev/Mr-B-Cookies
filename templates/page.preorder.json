@@ -35,11 +35,6 @@
           "type": "price",
           "settings": {}
         },
-        "quantity_selector_CzHkre": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
-        },
         "flavors_ke3Fn3": {
           "type": "flavors",
           "settings": {}
@@ -56,7 +51,6 @@
         "title_a66kXc",
         "description_DD7LtX",
         "price_8PUFVj",
-        "quantity_selector_CzHkre",
         "flavors_ke3Fn3",
         "buy_buttons_JPUYMw"
       ],
@@ -100,11 +94,6 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector_Qxdm7E": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
-        },
         "flavors_RXU6gy": {
           "type": "flavors",
           "settings": {}
@@ -122,7 +111,6 @@
         "description_k3YHEq",
         "price_wKBQXH",
         "variant_picker_Rd74Nf",
-        "quantity_selector_Qxdm7E",
         "flavors_RXU6gy",
         "buy_buttons_kXBTAQ"
       ],
