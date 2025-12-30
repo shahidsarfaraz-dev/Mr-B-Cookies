@@ -198,64 +198,83 @@
   {%- endif -%}
 </div>
 
-  {% if product.id == 9211665187053 %}
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        document.querySelector('[data-type="add-to-cart-form"]').forEach((form) => {
-          const qtySelectors = form.querySelectorAll('.cookie-qty');
-          const totalDisplay = form.querySelector('.cookieTotal');
-          const errorMsg = form.querySelector('.cookieError');
-          const submitBtn = form.querySelector('button[type="submit"]');
+{% if product.id == 9211665187053 %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
 
-          // Store previous values for each select
-          qtySelectors.forEach((select) => {
-            select.dataset.prevValue = select.value;
-          });
+    function initCookieLogic() {
+      document.querySelectorAll('[data-type="add-to-cart-form"]').forEach((form) => {
+        // Prevent double initialization
+        if (form.dataset.cookieInit === 'true') return;
+        form.dataset.cookieInit = 'true';
 
-          function calculateTotal() {
-            let total = 0;
-            qtySelectors.forEach((select) => {
-              total += parseInt(select.value || 0);
-            });
-            return total;
-          }
+        const qtySelectors = form.querySelectorAll('.cookie-qty');
+        const totalDisplay = form.querySelector('.cookieTotal');
+        const errorMsg = form.querySelector('.cookieError');
+        const submitBtn = form.querySelector('button[type="submit"]');
 
-          function updateUI(total) {
-            totalDisplay.textContent = total;
-
-            if (total === 6) {
-              errorMsg.style.display = 'none';
-              submitBtn.disabled = false;
-            } else {
-              errorMsg.style.display = 'block';
-              submitBtn.disabled = true;
-            }
-          }
-
-          qtySelectors.forEach((select) => {
-            select.addEventListener('change', function () {
-              const total = calculateTotal();
-
-              if (total > 6) {
-                alert('You can only select 6 cookies total.');
-
-                // Revert to previous value
-                this.value = this.dataset.prevValue;
-
-                updateUI(calculateTotal());
-                return;
-              }
-
-              // Save new valid value
-              this.dataset.prevValue = this.value;
-
-              updateUI(total);
-            });
-          });
-
-          // Initial state
-          updateUI(calculateTotal());
+        qtySelectors.forEach((select) => {
+          select.dataset.prevValue = select.value;
         });
+
+        function calculateTotal() {
+          let total = 0;
+          qtySelectors.forEach((select) => {
+            total += parseInt(select.value || 0);
+          });
+          return total;
+        }
+
+        function updateUI(total) {
+          totalDisplay.textContent = total;
+
+          if (total === 6) {
+            errorMsg.style.display = 'none';
+            submitBtn.disabled = false;
+          } else {
+            errorMsg.style.display = 'block';
+            submitBtn.disabled = true;
+          }
+        }
+
+        qtySelectors.forEach((select) => {
+          select.addEventListener('change', function () {
+            const total = calculateTotal();
+
+            if (total > 6) {
+              alert('You can only select 6 cookies total.');
+
+              // Revert to previous value
+              this.value = this.dataset.prevValue;
+              updateUI(calculateTotal());
+              return;
+            }
+
+            // Save new valid value
+            this.dataset.prevValue = this.value;
+            updateUI(total);
+          });
+        });
+
+        // Initial state
+        updateUI(calculateTotal());
       });
-    </script>
-  {% endif %}
+    }
+
+    // Run once initially
+    initCookieLogic();
+
+    // Observe DOM changes (Shopify sections, AJAX renders)
+    const observer = new MutationObserver(() => {
+      initCookieLogic();
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
+  });
+</script>
+{% endif %}
+
