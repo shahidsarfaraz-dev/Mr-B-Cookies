@@ -201,7 +201,7 @@
   {% if product.id == 9211665187053 %}
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        document.querySelectorAll('[data-box-builder]').forEach((form) => {
+        document.querySelector('[data-type="add-to-cart-form"]').forEach((form) => {
           const qtySelectors = form.querySelectorAll('.cookie-qty');
           const totalDisplay = form.querySelector('.cookieTotal');
           const errorMsg = form.querySelector('.cookieError');
