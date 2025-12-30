@@ -43,6 +43,53 @@
         novalidate: 'novalidate',
         data-type: 'add-to-cart-form'
       -%}
+        {% if product.id == 9211665187053 %}
+          <style>
+            .cookie-row {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 0.75rem;
+            }
+
+            .cookie-row label {
+              font-weight: 500;
+            }
+
+            .cookie-row select {
+              width: 70px;
+            }
+          </style>
+          <!-- REQUIRED VARIANT ID -->
+          <input
+            type="hidden"
+            name="id"
+            value="{{ product.selected_or_first_available_variant.id }}"
+          >
+          <p>Select 6 cookies.</p>
+
+          {% assign flavours = 'Milk Chocolate Sea Salt,Oatmeal Raisin,Morning Roast,White Chocolate Macadamia Nut,Double Chocolate,Peanut Butter' | split: ',' %}
+
+          {% for flavour in flavours %}
+            <div class="cookie-row">
+              <label>{{ flavour }}</label>
+              <select
+                name="properties[{{ flavour | strip }}]"
+                class="cookie-qty"
+              >
+                {% for i in (0..6) %}
+                  <option value="{{ i }}">{{ i }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          {% endfor %}
+
+          <p class="cookie-total">
+            Total selected:
+            <strong><span class="cookieTotal">0</span>/6</strong>
+          </p>
+
+          <p class="cookieError" style="display:none; color:red;">Please select exactly 6 cookies.</p>
+        {% endif %}
         <input
           type="hidden"
           name="id"
@@ -150,3 +197,65 @@
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 </div>
+
+  {% if product.id == 9211665187053 %}
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('[data-box-builder]').forEach((form) => {
+          const qtySelectors = form.querySelectorAll('.cookie-qty');
+          const totalDisplay = form.querySelector('.cookieTotal');
+          const errorMsg = form.querySelector('.cookieError');
+          const submitBtn = form.querySelector('button[type="submit"]');
+
+          // Store previous values for each select
+          qtySelectors.forEach((select) => {
+            select.dataset.prevValue = select.value;
+          });
+
+          function calculateTotal() {
+            let total = 0;
+            qtySelectors.forEach((select) => {
+              total += parseInt(select.value || 0);
+            });
+            return total;
+          }
+
+          function updateUI(total) {
+            totalDisplay.textContent = total;
+
+            if (total === 6) {
+              errorMsg.style.display = 'none';
+              submitBtn.disabled = false;
+            } else {
+              errorMsg.style.display = 'block';
+              submitBtn.disabled = true;
+            }
+          }
+
+          qtySelectors.forEach((select) => {
+            select.addEventListener('change', function () {
+              const total = calculateTotal();
+
+              if (total > 6) {
+                alert('You can only select 6 cookies total.');
+
+                // Revert to previous value
+                this.value = this.dataset.prevValue;
+
+                updateUI(calculateTotal());
+                return;
+              }
+
+              // Save new valid value
+              this.dataset.prevValue = this.value;
+
+              updateUI(total);
+            });
+          });
+
+          // Initial state
+          updateUI(calculateTotal());
+        });
+      });
+    </script>
+  {% endif %}
