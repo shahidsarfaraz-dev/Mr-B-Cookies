@@ -86,66 +86,6 @@
         "description": "<p>The best moments in life are shared over something warm, soft, and fresh from the oven. What began as a weekend hobby soon became a full-blown passion — and now, a way to bring a little extra comfort.</p>"
       }
     },
-    "box_of_six_rT4qet": {
-      "type": "box-of-six",
-      "blocks": {
-        "title_wcnDaQ": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "description_FdNAkp": {
-          "type": "description",
-          "settings": {}
-        },
-        "price_KrKWGQ": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker_GewnX6": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "flavors_nAh9CB": {
-          "type": "flavors",
-          "settings": {}
-        },
-        "buy_buttons_HFRyap": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        }
-      },
-      "block_order": [
-        "title_wcnDaQ",
-        "description_FdNAkp",
-        "price_KrKWGQ",
-        "variant_picker_GewnX6",
-        "flavors_nAh9CB",
-        "buy_buttons_HFRyap"
-      ],
-      "name": "Box OF 6 Product",
-      "settings": {
-        "product": "box-of-6",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "small",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 0,
-        "padding_bottom": 60
-      }
-    },
     "testimonial_slider_sec_yk9aCC": {
       "type": "testimonial-slider-sec",
       "blocks": {
@@ -248,6 +188,66 @@
         "total_reviews": 830
       }
     },
+    "box_of_six_rT4qet": {
+      "type": "box-of-six",
+      "blocks": {
+        "title_wcnDaQ": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "description_FdNAkp": {
+          "type": "description",
+          "settings": {}
+        },
+        "price_KrKWGQ": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_GewnX6": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "flavors_nAh9CB": {
+          "type": "flavors",
+          "settings": {}
+        },
+        "buy_buttons_HFRyap": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "title_wcnDaQ",
+        "description_FdNAkp",
+        "price_KrKWGQ",
+        "variant_picker_GewnX6",
+        "flavors_nAh9CB",
+        "buy_buttons_HFRyap"
+      ],
+      "name": "Box OF 6 Product",
+      "settings": {
+        "product": "box-of-6",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
     "faq_sec_9eiDH3": {
       "type": "faq-sec",
       "blocks": {
@@ -327,8 +327,8 @@
   "order": [
     "main",
     "half_sec_yn9GxU",
-    "box_of_six_rT4qet",
     "testimonial_slider_sec_yk9aCC",
+    "box_of_six_rT4qet",
     "faq_sec_9eiDH3",
     "related-products"
   ]
