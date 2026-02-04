@@ -539,7 +539,7 @@
   "shopify": {
     "checkout": {
       "delivery_options": {
-        "pick_up_in_one_hour": "Pre-order pickup only "
+        "pick_up_in_one_hour": "Pre-Order Pickup "
       }
     }
   }
